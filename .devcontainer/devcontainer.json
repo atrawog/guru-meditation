@@ -1,0 +1,52 @@
+{
+    "name": "guru-meditation",
+    "build": {
+        "dockerfile": "Containerfile"
+    },
+    "forwardPorts": [8000],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    "extensions": [
+        "continue.continue",
+        "executablebookproject.myst-highlight",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.remotehub",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-python.debugpy",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-hub",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode-remote.remote-wsl",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-vscode.remote-explorer",
+        "ms-vscode.remote-repositories",
+        "ms-vscode.remote-server"
+    ]
+    "remoteUser": "atrawog",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind",
+        "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,type=bind",
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ],
+    "postCreateCommand": "/workspace/config/postcreate.sh",
+    "updateRemoteUserUID": true,
+    "remoteEnv": {
+        "SSH_AUTH_SOCK": "/ssh-agent"
+    }
+}
