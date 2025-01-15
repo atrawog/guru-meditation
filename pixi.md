@@ -25,3 +25,4 @@ jupyterhub --config  /workspace/jupyterhub_config.py
 
 
 sudo supervisord -c "/etc/supervisord.conf"
+
