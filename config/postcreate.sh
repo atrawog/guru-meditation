@@ -13,4 +13,4 @@ set +a
 
 /usr/local/bin/fixpermission.sh
 /usr/local/bin/setpassword.sh
-sudo /usr/sbin/supervisord -c /etc/supervisord.conf > /dev/null 2>&1 &
+sudo /usr/sbin/supervisord -c /etc/supervisord.conf

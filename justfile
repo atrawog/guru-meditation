@@ -32,10 +32,10 @@ pixi:
         --mount type=bind,source="${PWD}",target=/workspace \
         --mount type=bind,source="${SSH_AUTH_SOCK}",target=/ssh-agent \
         --mount type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock \
+        --mount type=bind,source=/run/user/1000/bus,target=/run/user/1000/bus \
         --workdir /workspace \
         --rm \
         --name guru-meditation-pixi \
-        -p 8000:8000 \
         -it $DOCKER_USERNAME/$DOCKER_IMAGE:latest bash
 clean:
     rm -rf _build/*
