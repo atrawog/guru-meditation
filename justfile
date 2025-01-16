@@ -26,7 +26,7 @@ build:
         -t $DOCKER_USERNAME/$DOCKER_IMAGE:latest \
         -t $DOCKER_USERNAME/$DOCKER_IMAGE:$TIMESTAMP .
 
-pixi:
+bash:
     docker run \
         --env SSH_AUTH_SOCK=/ssh-agent \
         --mount type=bind,source="${PWD}",target=/workspace \

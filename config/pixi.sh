@@ -12,4 +12,6 @@ fi
 set +a
 
 /usr/local/bin/postcreate.sh
-/usr/local/bin/pixi shell --no-install
+/usr/sbin/bash
+# /usr/sbin/bash -c "cd /workspace && /usr/local/bin/pixi shell --no-install"
+# /usr/local/bin/pixi shell --no-install
