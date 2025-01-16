@@ -3,11 +3,24 @@
     "build": {
         "dockerfile": "Containerfile"
     },
+    "runArgs": [
+        "--gpus=all"
+    ],
     "forwardPorts": [8000],
     "customizations": {
         "vscode": {
             "settings": {
                 "terminal.integrated.shell.linux": "/usr/sbin/bash"
+                "python.analysis.indexing": false,
+                "python.analysis.diagnosticMode": "openFilesOnly",
+                "python.analysis.exclude": [
+                "**/.git",
+                "**/.pixi",
+                "**/_build",
+                "**/_jupyter",
+                "**/data",
+                "**/media"
+        ]
             }
         }
     },
@@ -21,7 +34,6 @@
         "ms-python.debugpy",
         "ms-python.isort",
         "ms-python.python",
-        "ms-python.vscode-pylance",
         "ms-toolsai.jupyter",
         "ms-toolsai.jupyter-hub",
         "ms-toolsai.jupyter-keymap",

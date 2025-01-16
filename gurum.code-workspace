@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"github.gitProtocol": "ssh",
+		"python.analysis.autoSearchPaths": false,
+		"python.analysis.exclude": [
+			"`media/`,`data/`"
+		],
+		"python.analysis.aiCodeActions": {
+			
+		}
+	}
+}
