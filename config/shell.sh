@@ -1,6 +1,6 @@
 #!/bin/bash
-# set -euxo pipefail
-# set -x
+#set -euxo pipefail
+#export PS4='Line $LINENO: '
 
 cd /workspace
 
@@ -13,5 +13,3 @@ set +a
 
 /usr/local/bin/postcreate.sh
 /usr/sbin/bash
-# /usr/sbin/bash -c "cd /workspace && /usr/local/bin/pixi shell --no-install"
-# /usr/local/bin/pixi shell --no-install

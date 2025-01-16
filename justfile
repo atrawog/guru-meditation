@@ -26,7 +26,7 @@ build:
         -t $DOCKER_USERNAME/$DOCKER_IMAGE:latest \
         -t $DOCKER_USERNAME/$DOCKER_IMAGE:$TIMESTAMP .
 
-bash:
+shell:
     docker run \
         --env SSH_AUTH_SOCK=/ssh-agent \
         --mount type=bind,source="${PWD}",target=/workspace \
@@ -36,7 +36,7 @@ bash:
         --workdir /workspace \
         --rm \
         --name guru-meditation-pixi \
-        -it $DOCKER_USERNAME/$DOCKER_IMAGE:latest bash
+        -it $DOCKER_USERNAME/$DOCKER_IMAGE:latest
 clean:
     rm -rf _build/*
     rm -rf _jupyter/*

@@ -35,7 +35,9 @@
         "ms-vscode-remote.vscode-remote-extensionpack",
         "ms-vscode.remote-explorer",
         "ms-vscode.remote-repositories",
-        "ms-vscode.remote-server"
+        "ms-vscode.remote-server",
+        "ms-vscode.remote-server-integration",
+        "ms-azuretools.vscode-docker"
     ]
     "remoteUser": "atrawog",
     "workspaceFolder": "/workspace",

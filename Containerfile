@@ -62,5 +62,4 @@ WORKDIR ${HOME}
 #    cd .. && rm -rf yay
 
 WORKDIR /workspace
-
-ENTRYPOINT ["/usr/local/bin/pixi.sh"]
+ENTRYPOINT ["/usr/local/bin/shell.sh"]
