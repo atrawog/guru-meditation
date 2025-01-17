@@ -1,4 +1,6 @@
 {
+    
+    "mergeBehavior": "overwrite",
     "indexPath": "/workspace/.continue/index",
     "models": [
         {
@@ -26,5 +28,43 @@
     "provider": "ollama",
     "model": "nomic-embed-text"
     },
-    "mergeBehavior": "overwrite"
+
+    "docs": [
+        {
+        "title": "continue",
+        "startUrl": "https://docs.continue.dev/"
+        },
+        {
+            "title": "kubernetes",
+            "startUrl": "https://kubernetes.io/docs/home/"
+        },
+        {
+            "title": "k3s",
+            "startUrl": "https://docs.k3s.io/"
+        },
+        {
+            "title": "rook",
+            "startUrl": "https://rook.github.io/docs/rook/latest-release/Getting-Started/intro/"
+        },
+        {
+            "title": "longhorn",
+            "startUrl": "https://longhorn.io/docs/1.7.2/"
+        },
+        {
+            "title": "jupyterhub",
+            "startUrl": "https://jupyterhub.readthedocs.io/en/stable/"
+        },
+        {
+            "title": "huggingface",
+            "startUrl": "https://huggingface.co/docs"
+        },
+        {
+            "title": "arch",
+            "startUrl": "https://wiki.archlinux.org/title/Table_of_contents"
+        },
+        {
+            "title": "bazzite",
+            "startUrl": "https://docs.bazzite.gg/"
+        }
+    ]
 }
