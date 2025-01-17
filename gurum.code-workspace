@@ -13,5 +13,13 @@
 		"python.analysis.aiCodeActions": {
 			
 		}
+		"files.watcherExclude": {
+			"**/.git/**": true,
+			"**/.pixi/**": true,
+			"**/_build/**": true,
+			"**/_jupyter/**": true,
+			"**/data/**": true,
+			"**/media/**": true
+        }
 	}
 }

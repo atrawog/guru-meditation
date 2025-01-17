@@ -4,7 +4,8 @@
         "dockerfile": "Containerfile"
     },
     "runArgs": [
-        "--gpus=all"
+        "--gpus=all",
+        "--env-file=config/config.env"
     ],
     "forwardPorts": [8000],
     "customizations": {
@@ -14,13 +15,21 @@
                 "python.analysis.indexing": false,
                 "python.analysis.diagnosticMode": "openFilesOnly",
                 "python.analysis.exclude": [
-                "**/.git",
-                "**/.pixi",
-                "**/_build",
-                "**/_jupyter",
-                "**/data",
-                "**/media"
-        ]
+                    "**/.git/**",
+                    "**/.pixi/**",
+                    "**/_build/**",
+                    "**/_jupyter/**",
+                    "**/data/**",
+                    "**/media/**"
+                ],
+                "files.watcherExclude": {
+                    "**/.git/**": true,
+                    "**/.pixi/**": true,
+                    "**/_build/**": true,
+                    "**/_jupyter/**": true,
+                    "**/data/**": true,
+                    "**/media/**": true
+                  }
             }
         }
     },
@@ -48,7 +57,6 @@
         "ms-vscode.remote-explorer",
         "ms-vscode.remote-repositories",
         "ms-vscode.remote-server",
-        "ms-vscode.remote-server-integration",
         "ms-azuretools.vscode-docker"
     ]
     "remoteUser": "atrawog",
