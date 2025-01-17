@@ -5,7 +5,8 @@
     },
     "runArgs": [
         "--gpus=all",
-        "--env-file=config/config.env"
+        "--env-file=config/config.env",
+        "--hostname=gurum" 
     ],
     "forwardPorts": [8000],
     "customizations": {

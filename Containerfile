@@ -50,6 +50,7 @@ COPY config/*.ini /etc/supervisor.d/
 COPY config/*.sh /usr/local/bin/
 
 EXPOSE 8000
+EXPOSE 11434
 
 USER ${USER_NAME}
 WORKDIR ${HOME}
