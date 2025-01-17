@@ -1,3 +1,30 @@
 {
-    "indexPath": "/workspace/.continue/index"
+    "indexPath": "/workspace/.continue/index",
+    "models": [
+        {
+            "title": "DeepSeek Coder 2 16B",
+            "provider": "ollama",
+            "model": "deepseek-coder-v2:16b"
+        },
+        {
+            "title": "Llama 3.1 8B",
+            "provider": "ollama",
+            "model": "llama3.1:8b"
+        }
+    ],
+    "tabAutocompleteModel": {
+        "title": "Qwen2.5-Coder 1.5B",
+        "model": "qwen2.5-coder:1.5b-base",
+        "provider": "ollama"
+    },
+    "tabAutocompleteOptions": {
+        "maxPromptTokens": 400,
+        "prefixPercentage": 0.5,
+        "multilineCompletions": "always"
+    },
+    "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text"
+    },
+    "mergeBehavior": "overwrite"
 }
