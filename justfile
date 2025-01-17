@@ -11,9 +11,10 @@ TIMESTAMP := `date '+%Y%m%d.%H%M'`
 
 # Build container image
 build:
+    set -a; source config/config.env; set +a; \
     docker build \
-        --build-arg BASE_IMAGE=$BASE_IMAGE \
-        --build-arg BASE_VERSION=$BASE_VERSION \
+        --build-arg BASE_IMAGE="$BASE_IMAGE" \
+        --build-arg BASE_VERSION="$BASE_VERSION" \
         --build-arg ARCH_BASE="$ARCH_BASE" \
         --build-arg ARCH_AI="$ARCH_AI" \
         --build-arg ARCH_EXTRA="$ARCH_EXTRA" \
@@ -25,14 +26,17 @@ build:
         -f $CONTAINERFILE \
         -t $DOCKER_USERNAME/$DOCKER_IMAGE:latest \
         -t $DOCKER_USERNAME/$DOCKER_IMAGE:$TIMESTAMP .
+    echo  "FROM ${DOCKER_USERNAME}/${DOCKER_IMAGE}:latest" > .devcontainer/${CONTAINERFILE}
 
 shell:
+    set -a; source config/config.env; set +a; \
     docker run \
-        --env SSH_AUTH_SOCK=/ssh-agent \
+        --hostname ${HOSTNAME} \
+        --env SSH_AUTH_SOCK=${DEVC_SSH_AUTH_SOCK} \
         --mount type=bind,source="${PWD}",target=/workspace \
-        --mount type=bind,source="${SSH_AUTH_SOCK}",target=/ssh-agent \
         --mount type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock \
         --mount type=bind,source=/run/user/1000/bus,target=/run/user/1000/bus \
+        --mount type=bind,source=${SSH_AUTH_SOCK},target=${DEVC_SSH_AUTH_SOCK} \
         --workdir /workspace \
         --rm \
         --name guru-meditation-pixi \

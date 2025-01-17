@@ -42,8 +42,8 @@ RUN groupadd --gid ${USER_GID} ${USER_NAME} && \
     echo 'Defaults:%wheel env_keep="*"' | tee -a /etc/sudoers.d/wheel && \
     chmod 0440 /etc/sudoers.d/wheel
 
-RUN mkdir -p /{media,sync,workspace} && \
-    chown -R ${USER_NAME}:${USER_NAME} /{media,sync,workspace}
+RUN mkdir -p /workspace && \
+    chown -R ${USER_NAME}:${USER_NAME} /workspace
 
 COPY config/supervisord.conf /etc/supervisord.conf
 COPY config/*.ini /etc/supervisor.d/
