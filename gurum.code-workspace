@@ -8,11 +8,11 @@
 		"github.gitProtocol": "ssh",
 		"python.analysis.autoSearchPaths": false,
 		"python.analysis.exclude": [
-			"`media/`,`data/`"
+			"media/",
+			"data/"
 		],
 		"python.analysis.aiCodeActions": {
-			
-		}
+		},
 		"files.watcherExclude": {
 			"**/.git/**": true,
 			"**/.pixi/**": true,

@@ -197,6 +197,10 @@
     {
         "title": "FastAPI",
         "startUrl": "https://fastapi.tiangolo.com"
+    },
+    {
+        "title": "LanceDB",
+        "startUrl": "https://lancedb.github.io/lancedb/"
     }
     ]
 }
