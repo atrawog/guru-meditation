@@ -10,11 +10,11 @@ Sending every bit of your code to a commercial AI provider isn't ideal. Even if 
 
 ### Run Any OpenSource AI Model You Want
 
-While the costs and VRAM size of your GPU may be limiting factors for some time, even small and medium-sized models are becoming powerful enough to handle serious work. Guru-Meditation supports running various OpenSource AI models, giving you the flexibility to choose the best model for your needs.
+While the costs and VRAM size of your GPU may be limiting factors for some time, even small and medium-sized models are becoming powerful enough to handle serious work. Guru-Meditation supports running various OpenSource AI models via Ollama, giving you the flexibility to choose the best model for your needs.
 
 ### Provide the AI with the Context and Documentation It Needs
 
-Current AI services often provide subpar answers because they don't understand the context of your question or use outdated code or documentation. Running your AI locally enables you to create a local embedding database that includes both your complete codebase and up-to-date documentation. This provides your AI with the context it needs to answer project-related questions accurately.
+Current AI services often provide subpar answers because they don't understand the context of your question or use outdated code or documentation. Running your AI locally enables you to use Continue.dev to create a local LanceDB embedding database that includes both your complete codebase and up-to-date documentation. This provides your AI with the context it needs to answer project-related questions accurately.
 
 ## Requirements
 
