@@ -48,15 +48,15 @@
     "docs": [
       {
         "title": "Continue",
-        "startUrl": "https://docs.continue.dev/"
+        "startUrl": "https://docs.continue.dev"
       },
       {
         "title": "Kubernetes",
-        "startUrl": "https://kubernetes.io/docs/home/"
+        "startUrl": "https://kubernetes.io/docs"
       },
       {
         "title": "K3S",
-        "startUrl": "https://docs.k3s.io/"
+        "startUrl": "https://docs.k3s.io"
       },
       {
         "title": "Rook",
@@ -80,7 +80,7 @@
       },
       {
         "title": "Bazzite",
-        "startUrl": "https://docs.bazzite.gg/"
+        "startUrl": "https://docs.bazzite.gg"
       },
       {
         "title": "Zero2Jupyterhub",
@@ -108,7 +108,7 @@
       },
       {
         "title": "Myst",
-        "startUrl": "https://mystmd.org/"
+        "startUrl": "https://mystmd.org"
       },
       {
         "title": "Python-Library",
@@ -175,16 +175,8 @@
         "startUrl": "https://docs.flatpak.org/en/latest/"
       },
     {
-        "title": "Kubernetes Helm",
-        "startUrl": "https://helm.sh/docs/"
-    },
-    {
         "title": "Kubernetes Kubectl",
         "startUrl": "https://kubectl.docs.kubernetes.io/guides/"
-    },
-    {
-        "title": "Kubernetes Concepts",
-        "startUrl": "https://kubernetes.io/docs/concepts/"
     },
     {
         "title": "Visualstudio",
@@ -200,15 +192,11 @@
     },
     {
         "title": "Etcd",
-        "startUrl": "https://etcd.io/docs/v3.5/"
+        "startUrl": "https://etcd.io/docs/v3.5"
     },
     {
         "title": "FastAPI",
-        "startUrl": "https://fastapi.tiangolo.com/"
-    },
-    {
-        "title": "Wikipedia - Kubernetes",
-        "startUrl": "https://en.wikipedia.org/wiki/Kubernetes"
+        "startUrl": "https://fastapi.tiangolo.com"
     }
     ]
 }
