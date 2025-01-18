@@ -58,7 +58,10 @@
         "ms-vscode.remote-explorer",
         "ms-vscode.remote-repositories",
         "ms-vscode.remote-server",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-german",
+        "ms-python.vscode-pylance"
     ]
     "remoteUser": "atrawog",
     "workspaceFolder": "/workspace",
