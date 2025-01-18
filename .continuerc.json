@@ -1,70 +1,214 @@
 {
-    
     "mergeBehavior": "overwrite",
     "indexPath": "/workspace/.continue/index",
     "models": [
-        {
-            "title": "DeepSeek Coder 2 16B",
-            "provider": "ollama",
-            "model": "deepseek-coder-v2:16b"
-        },
-        {
-            "title": "Llama 3.1 8B",
-            "provider": "ollama",
-            "model": "llama3.1:8b"
-        }
+      {
+        "title": "Deepseek Coder 2 16B",
+        "provider": "ollama",
+        "model": "deepseek-coder-v2:16b"
+      },
+      {
+        "title": "Llama 3.1 8B",
+        "provider": "ollama",
+        "model": "llama3.1:8b"
+      }
     ],
     "tabAutocompleteModel": {
-        "title": "Qwen2.5-Coder 1.5B",
-        "model": "qwen2.5-coder:1.5b-base",
-        "provider": "ollama"
+      "title": "Qwen2.5-Coder 1.5B",
+      "model": "qwen2.5-coder:1.5b-base",
+      "provider": "ollama"
     },
     "tabAutocompleteOptions": {
-        "maxPromptTokens": 400,
-        "prefixPercentage": 0.5,
-        "multilineCompletions": "always"
+      "maxPromptTokens": 400,
+      "prefixPercentage": 0.5,
+      "multilineCompletions": "always"
     },
     "embeddingsProvider": {
-    "provider": "ollama",
-    "model": "nomic-embed-text"
+      "provider": "ollama",
+      "model": "nomic-embed-text"
     },
-
-    "docs": [
-        {
-        "title": "continue",
-        "startUrl": "https://docs.continue.dev/"
-        },
-        {
-            "title": "kubernetes",
-            "startUrl": "https://kubernetes.io/docs/home/"
-        },
-        {
-            "title": "k3s",
-            "startUrl": "https://docs.k3s.io/"
-        },
-        {
-            "title": "rook",
-            "startUrl": "https://rook.github.io/docs/rook/latest-release/Getting-Started/intro/"
-        },
-        {
-            "title": "longhorn",
-            "startUrl": "https://longhorn.io/docs/1.7.2/"
-        },
-        {
-            "title": "jupyterhub",
-            "startUrl": "https://jupyterhub.readthedocs.io/en/stable/"
-        },
-        {
-            "title": "huggingface",
-            "startUrl": "https://huggingface.co/docs"
-        },
-        {
-            "title": "arch",
-            "startUrl": "https://wiki.archlinux.org/title/Table_of_contents"
-        },
-        {
-            "title": "bazzite",
-            "startUrl": "https://docs.bazzite.gg/"
+    "contextProviders": [
+      {
+        "name": "docs",
+        "params": {
+          "nRetrieve": 25,
+          "nFinal": 5,
+          "useReranking": true
         }
+      },
+      {
+        "name": "codebase",
+        "params": {
+          "nRetrieve": 25,
+          "nFinal": 5,
+          "useReranking": true
+        }
+      }
+    ],
+    "docs": [
+      {
+        "title": "Continue",
+        "startUrl": "https://docs.continue.dev/"
+      },
+      {
+        "title": "Kubernetes",
+        "startUrl": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "title": "K3S",
+        "startUrl": "https://docs.k3s.io/"
+      },
+      {
+        "title": "Rook",
+        "startUrl": "https://rook.github.io/docs/rook/latest-release/Getting-Started/intro/"
+      },
+      {
+        "title": "Longhorn",
+        "startUrl": "https://longhorn.io/docs/1.7.2/"
+      },
+      {
+        "title": "Jupyterhub",
+        "startUrl": "https://jupyterhub.readthedocs.io/en/stable/"
+      },
+      {
+        "title": "Huggingface",
+        "startUrl": "https://huggingface.co/docs"
+      },
+      {
+        "title": "Arch",
+        "startUrl": "https://wiki.archlinux.org/title/Table_of_contents"
+      },
+      {
+        "title": "Bazzite",
+        "startUrl": "https://docs.bazzite.gg/"
+      },
+      {
+        "title": "Zero2Jupyterhub",
+        "startUrl": "https://z2jh.jupyter.org/en/stable/"
+      },
+      {
+        "title": "Jupyter",
+        "startUrl": "https://docs.jupyter.org/en/latest/"
+      },
+      {
+        "title": "Jupyter-Server",
+        "startUrl": "https://jupyter-server.readthedocs.io/en/latest/"
+      },
+      {
+        "title": "Jupyter-Lab",
+        "startUrl": "https://jupyterlab.readthedocs.io/en/latest/"
+      },
+      {
+        "title": "Jupyter-Book",
+        "startUrl": "https://jupyterbook.org/en/stable/intro.html"
+      },
+      {
+        "title": "Executablebooks",
+        "startUrl": "https://executablebooks.org/en/latest/"
+      },
+      {
+        "title": "Myst",
+        "startUrl": "https://mystmd.org/"
+      },
+      {
+        "title": "Python-Library",
+        "startUrl": "https://docs.python.org/3/library/index.html"
+      },
+      {
+        "title": "Jupyterlite",
+        "startUrl": "https://jupyterlite.readthedocs.io/en/stable/"
+      },
+      {
+        "title": "Ansible",
+        "startUrl": "https://docs.ansible.com/ansible/latest/index.html"
+      },
+      {
+        "title": "Opentofu",
+        "startUrl": "https://opentofu.org/docs/"
+      },
+      {
+        "title": "Docker",
+        "startUrl": "https://docs.docker.com/manuals/"
+      },
+      {
+        "title": "Podman",
+        "startUrl": "https://podman.io/docs"
+      },
+      {
+        "title": "Distrobox",
+        "startUrl": "https://distrobox.it/#distrobox"
+      },
+      {
+        "title": "Helm",
+        "startUrl": "https://helm.sh/docs/"
+      },
+      {
+        "title": "Redhat",
+        "startUrl": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9"
+      },
+      {
+        "title": "Nvidia Container Toolkit",
+        "startUrl": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html"
+      },
+      {
+        "title": "Nvidia Cuda",
+        "startUrl": "https://docs.nvidia.com/cuda/doc/index.html"
+      },
+      {
+        "title": "Nvidia CuDNN",
+        "startUrl": "https://docs.nvidia.com/cudnn/index.html"
+      },
+      {
+        "title": "Paws",
+        "startUrl": "https://wikitech.wikimedia.org/wiki/PAWS"
+      },
+      {
+        "title": "Rpm-Ostree",
+        "startUrl": "https://coreos.github.io/rpm-ostree/"
+      },
+      {
+        "title": "Libostree",
+        "startUrl": "https://ostreedev.github.io/ostree/"
+      },
+      {
+        "title": "Flatpak",
+        "startUrl": "https://docs.flatpak.org/en/latest/"
+      },
+    {
+        "title": "Kubernetes Helm",
+        "startUrl": "https://helm.sh/docs/"
+    },
+    {
+        "title": "Kubernetes Kubectl",
+        "startUrl": "https://kubectl.docs.kubernetes.io/guides/"
+    },
+    {
+        "title": "Kubernetes Concepts",
+        "startUrl": "https://kubernetes.io/docs/concepts/"
+    },
+    {
+        "title": "Visualstudio",
+        "startUrl": "https://code.visualstudio.com/docs"
+    },
+    {
+        "title": "Homebrew",
+        "startUrl": "https://docs.brew.sh/"
+    },
+    {
+        "title": "Pixi",
+        "startUrl": "https://pixi.sh/latest/"
+    },
+    {
+        "title": "Etcd",
+        "startUrl": "https://etcd.io/docs/v3.5/"
+    },
+    {
+        "title": "FastAPI",
+        "startUrl": "https://fastapi.tiangolo.com/"
+    },
+    {
+        "title": "Wikipedia - Kubernetes",
+        "startUrl": "https://en.wikipedia.org/wiki/Kubernetes"
+    }
     ]
 }
