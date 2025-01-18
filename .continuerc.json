@@ -1,32 +1,6 @@
 {
-    "mergeBehavior": "overwrite",
-    "indexPath": "/workspace/.continue/index",
-    "models": [
-      {
-        "title": "Deepseek Coder 2 16B",
-        "provider": "ollama",
-        "model": "deepseek-coder-v2:16b"
-      },
-      {
-        "title": "Llama 3.1 8B",
-        "provider": "ollama",
-        "model": "llama3.1:8b"
-      }
-    ],
-    "tabAutocompleteModel": {
-      "title": "Qwen2.5-Coder 1.5B",
-      "model": "qwen2.5-coder:1.5b-base",
-      "provider": "ollama"
-    },
-    "tabAutocompleteOptions": {
-      "maxPromptTokens": 400,
-      "prefixPercentage": 0.5,
-      "multilineCompletions": "always"
-    },
-    "embeddingsProvider": {
-      "provider": "ollama",
-      "model": "nomic-embed-text"
-    },
+    "mergeBehavior": "merge",
+
     "contextProviders": [
       {
         "name": "docs",
@@ -45,6 +19,122 @@
         }
       }
     ],
+    "contextProviders": [
+    {
+      "name": "docs",
+        "params": {
+          "nRetrieve": 25,
+          "nFinal": 5,
+          "useReranking": true
+        }
+    },
+    {
+      "name": "codebase",
+      "params": {
+        "nRetrieve": 25,
+        "nFinal": 5,
+        "useReranking": true
+      }
+    },
+    {
+      "name": "web",
+      "params": {
+        "n": 5
+      }
+    },
+    {
+      "name": "code",
+      "params": {}
+    },
+    {
+      "name": "diff",
+      "params": {}
+    },
+    {
+      "name": "terminal",
+      "params": {}
+    },
+    {
+      "name": "problems",
+      "params": {}
+    },
+    {
+      "name": "folder",
+      "params": {}
+    },
+    {
+      "name": "search"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "clipboard"
+    },
+    {
+      "name": "tree"
+    },
+    {
+      "name": "problems"
+    },
+    {
+      "name": "repo-map",
+      "params": {
+        "includeSignatures": true
+      }
+    },
+    {
+      "name": "os"
+    }
+  ],
+  "slashCommands": [
+    {
+      "name": "share",
+      "description": "Export the current chat session to markdown"
+    },
+    {
+      "name": "cmd",
+      "description": "Generate a shell command"
+    },
+    {
+      "name": "commit",
+      "description": "Generate a git commit message"
+    }
+  ],
+    "models": [
+      {
+        "title": "StarCoder2 15B",
+        "provider": "ollama",
+        "model": "starcoder2:15b"
+      },
+      {
+        "title": "Deepseek Coder 2 16B",
+        "provider": "ollama",
+        "model": "deepseek-coder-v2:16b"
+      },
+      {
+        "title": "Llama 3.1 8B",
+        "provider": "ollama",
+        "model": "llama3.1:8b"
+      }
+    ],
+    "tabAutocompleteModel": {
+      "title": "StarCoder2 15B",
+      "model": "starcoder2:15b",
+      "provider": "ollama"
+    },
+    "tabAutocompleteOptions": {
+      "maxPromptTokens": 400,
+      "prefixPercentage": 0.5,
+      "multilineCompletions": "always"
+    },
+    "embeddingsProvider": {
+      "provider": "ollama",
+      "model": "nomic-embed-text"
+    },
+    "experimental": {
+      "useChromiumForDocsCrawling": false
+    },
     "docs": [
       {
         "title": "Continue",
@@ -201,6 +291,10 @@
     {
         "title": "LanceDB",
         "startUrl": "https://lancedb.github.io/lancedb/"
+    },
+    {
+        "title": "Cloudflare - Learning",
+        "startUrl": "https://www.cloudflare.com/learning/ai/what-is-artificial-intelligence/"
     }
     ]
 }
