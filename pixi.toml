@@ -26,7 +26,6 @@ numpy = ">=1.26.4,<2"
 pandas = ">=2.2.3,<3"
 geopandas = ">=1.0.1,<2"
 vega_datasets = ">=0.9.0,<0.10"
-jupyter-book = ">=1.0.3,<2"
 jupyterhub = ">=5.2.1,<6"
 jupyterlab = ">=4.3.3,<5"
 ansible = ">=11.0.0,<12"
@@ -53,9 +52,11 @@ huggingface-hub = "*"
 bitsandbytes = ">=0.45.0, <0.46"
 libvirt-python = ">=10.10.0, <11"
 lancedb = ">=0.18.0, <0.19"
+jupyter-book = ">=2.0.0a1"
 
 [tasks]
 jupyterhub = "python -m jupyterhub --config  /workspace/config/jupyterhub_config.py"
+jupyterbook = "python -m jupyter book start"
 
 
 

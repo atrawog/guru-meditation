@@ -105,7 +105,8 @@
       {
         "title": "StarCoder2 15B",
         "provider": "ollama",
-        "model": "starcoder2:15b"
+        "model": "starcoder2:15b",
+        "contextLength": 100000
       },
       {
         "title": "Deepseek Coder 2 16B",

@@ -24,6 +24,32 @@ echo "Checking for supervisor socket at ${socket_path}..."
     done
     echo "Supervisor socket is available."
 
+
+if [ "${JUPYTERBOOK_ENABLE}" = "true" ]; then
+    echo "JUPYTERBOOK_ENABLE is set. Proceeding to start jupyterbook."
+
+    # Start jupyterbook using supervisorctl
+    supervisorctl start jupyterbook
+
+    # Loop to check the status of jupyterbook
+    while true; do
+        # Get the status of jupyterbook
+        status=$(supervisorctl status jupyjupyterbookterhub | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "jupyterbook is running."
+            break
+        else
+            echo "Waiting for jupyterbook to start..."
+            sleep 1
+        fi
+    done
+else
+    echo "JUPYTERBOOK_ENABLE is not set. Skipping jupyterbook startup."
+fi
+
+
 if [ "${JUPYTERHUB_ENABLE}" = "true" ]; then
     echo "JUPYTERHUB_ENABLE is set. Proceeding to start jupyterhub."
 

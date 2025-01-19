@@ -1,3 +1,24 @@
+# Configuration File Usage in Project Scripts
+
+This document outlines how environment variables from the `config.env` file are utilized across various configuration files and shell scripts within the project.
+
+## Configuring Environment Variables
+
+The `config.env` file contains essential environment variables that are used throughout the project, primarily by build and run commands in the Justfile. The following is a breakdown of each variable:
+
+- **BASE_IMAGE**: Specifies the base image for Docker container builds.
+- **BASE_VERSION**: Defines the version of the base image specified by `BASE_IMAGE`.
+- **ARCH_BASE, ARCH_AI, ARCH_EXTRA, ARCH_TESTING**: Used to specify different architectural configurations for the Docker image.
+- **USER_NAME, USER_UID, USER_GID**: Define the user and its UID and GID within the Docker container.
+- **PIXI_VERSION**: Specifies the version of PIXI to be used.
+- **DOCKER_USERNAME, DOCKER_IMAGE, CONTAINERFILE**: Variables related to Docker image naming and the Dockerfile location.
+- **HOSTNAME**: Sets the hostname for the Docker container.
+
+## Usage in Configuration Files
+
+The `config.env` file is sourced at the beginning of each task defined in the Justfile, specifically within the `build` and `shell` tasks:
+
+```justfile
 # justfile
 
 # Load environment variables from config.env
@@ -38,17 +59,4 @@ shell:
     # Run Docker container with specified options
     docker run \
         --hostname ${HOSTNAME} \
-        --env SSH_AUTH_SOCK=${DEVC_SSH_AUTH_SOCK} \
-        --mount type=bind,source="${PWD}",target=/workspace \
-        --mount type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock \
-        --mount type=bind,source=/run/user/1000/bus,target=/run/user/1000/bus \
-        --mount type=bind,source=${SSH_AUTH_SOCK},target=${DEVC_SSH_AUTH_SOCK} \
-        --workdir /workspace \
-        --rm \
-        --name guru-meditation-pixi \
-        -it $DOCKER_USERNAME/$DOCKER_IMAGE:latest
-
-# Clean build and Jupyter directories
-clean:
-    rm -rf _build/*
-    rm -rf _jupyter/*
+```

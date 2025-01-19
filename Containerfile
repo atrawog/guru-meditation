@@ -49,6 +49,7 @@ COPY config/supervisord.conf /etc/supervisord.conf
 COPY config/*.ini /etc/supervisor.d/
 COPY config/*.sh /usr/local/bin/
 
+EXPOSE 3000
 EXPOSE 8000
 EXPOSE 11434
 

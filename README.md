@@ -6,7 +6,7 @@ Guru-Meditation is a cloud-native AI workbench that integrates various tools and
 
 ### Keep Control of Your Code
 
-Sending every bit of your code to a commercial AI provider isn't ideal. Even if you're writing and running almost 100% OpenSource software, it's important to maintain control over your codebase. Guru-Meditation allows you to keep your code secure and private by running AI models locally.
+Sending every bit of your code to a commercial AI provider isn't ideal. Even if you're writing and running 100% OpenSource software, it's important to maintain control over your codebase. Guru-Meditation allows you to keep your code secure and private by running your AI models locally.
 
 ### Run Any OpenSource AI Model You Want
 
@@ -14,17 +14,11 @@ While the costs and VRAM size of your GPU may be limiting factors for some time,
 
 ### Provide the AI with the Context and Documentation It Needs
 
-Current AI services often provide subpar answers because they don't understand the context of your question or use outdated code or documentation. Running your AI locally enables you to use Continue.dev to create a local LanceDB embedding database that includes both your complete codebase and up-to-date documentation. This provides your AI with the context it needs to answer project-related questions accurately.
-
-## Requirements
-
-- [Docker](https://www.docker.com/): Docker is a platform that enables developers to build, ship, and run applications in containers. Containers are lightweight, portable, and ensure consistency across different environments.
-- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html): The NVIDIA Container Toolkit allows users to build and run GPU-accelerated Docker containers. It provides the necessary components to leverage NVIDIA GPUs within containers.
-- A powerful GPU with at least 16 GB of VRAM is required to handle the computational demands of AI workloads and ensure smooth performance.
+Current AI services often provide subpar answers because they don't understand the context of your question or refer to outdated code or documentation. Running your AI locally enables you to use Continue.dev to create a LanceDB embedding database that includes both your complete codebase and up-to-date documentation. This provides your AI with the context it needs to answer project-related questions accurately.
 
 ## Included Tools
 
-- **Arch Linux Container Image with CUDA Enabled**: This is a lightweight and flexible Linux distribution that comes with CUDA support for GPU acceleration. It provides a robust environment for running AI and machine learning workloads efficiently.
+- **Arch Linux Container Image with CUDA Enabled**: This is a lightweight and flexible Linux distribution that comes with CUDA support for GPU acceleration. It provides a robust container environment for running AI and machine learning workloads efficiently.
 
 - **Pixi.sh Conda-Forge / PyPi Environment for Common AI Tools**: Pixi.sh offers a pre-configured environment that includes popular AI tools from Conda-Forge and PyPi repositories. This simplifies the installation and management of AI libraries and dependencies, making it easier to set up and maintain your AI development environment.
 
@@ -42,6 +36,13 @@ Current AI services often provide subpar answers because they don't understand t
   - [Minikube](https://minikube.sigs.k8s.io/docs/): Minikube is a tool that runs a single-node Kubernetes cluster inside a virtual machine on your local machine. It is ideal for local development and testing of Kubernetes applications.
 
 - **Jupyter Book Workflow for Documentation**: Jupyter Book is a tool for creating and managing documentation using Jupyter notebooks. It allows you to combine narrative text, code, and visualizations in a single document, making it an excellent choice for technical documentation and educational materials.
+
+## Requirements
+
+- [Docker](https://www.docker.com/): Docker is a platform that enables developers to build, ship, and run applications in containers. Containers are lightweight, portable, and ensure consistency across different environments.
+- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html): The NVIDIA Container Toolkit allows users to build and run GPU-accelerated Docker containers. It provides the necessary components to leverage NVIDIA GPUs within containers.
+- A NVIDIA GPU with at least 16 GB of VRAM is required to handle the computational demands of AI workloads and ensure smooth performance.
+
 
 ## Getting Started
 
