@@ -16,10 +16,6 @@ project:
       children:
         - file: guru-mediation/config.env.md
         - file: guru-mediation/justfile.md
-    - title: Testing
-      children:
-        - file: testing/ans_runner.ipynb
-        - file: testing/vm_create.ipynb
     
 site:
   template: book-theme
