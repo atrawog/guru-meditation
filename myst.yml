@@ -5,6 +5,7 @@ project:
   title: Guru Mediation
   description: A collection of notes on software development, programming languages, and computer science.
   license: CC-BY-SA-4.0
+  open_access: true
   # keywords: []
   # authors: []
   github: https://github.com/atrawog/guru-meditation

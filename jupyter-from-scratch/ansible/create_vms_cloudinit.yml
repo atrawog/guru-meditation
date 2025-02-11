@@ -1,0 +1,24 @@
+---
+- name: Deploy and start Debian 12 VMs
+  hosts: "{{ lookup('env', 'LIBVIRT_HOST') }}"
+  become: true
+  tasks:
+    - name: Ensure destination directory exists
+      ansible.builtin.file:
+        path: /var/lib/libvirt/images
+        state: directory
+        mode: '0755'
+      become: true
+
+    - name: Download Debian 12 QCOW2 image
+      ansible.builtin.get_url:
+        url: "{{ base_image_url }}"
+        dest: /var/lib/libvirt/images/{{ base_image_name }}.qcow2
+        mode: '0644'
+      become: true
+
+    - name: Create VMs
+      ansible.builtin.include_tasks: create_vm_cloudinit.yml
+      loop: "{{ vm_names.split(',') }}"
+      loop_control:
+        loop_var: vm_name

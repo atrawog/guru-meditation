@@ -1,0 +1,33 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  name: istio-install
+  namespace: istio-system
+spec:
+  profile: default
+  components:
+    ingressGateways:
+      - name: istio-ingressgateway
+        enabled: true
+        namespace: istio-system
+        k8s:
+          hostNetwork: true
+          securityContext:
+            runAsNonRoot: false
+            runAsUser: 0
+            capabilities:
+              add: ["NET_BIND_SERVICE"]
+          # We do not need a NodePort or LoadBalancer service if we're binding
+          # directly to the host's ports 80 & 443.
+          service:
+            type: ClusterIP
+            ports:
+              - name: status-port
+                port: 15021
+              - name: http2
+                port: 80
+                protocol: TCP
+              - name: https
+                port: 443
+                protocol: TCP
+              # Additional ports (15012, 15017, etc) can be added if needed.

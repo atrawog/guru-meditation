@@ -1,0 +1,42 @@
+---
+- name: Delete VMs with a specified name prefix
+  hosts: localhost
+  gather_facts: no
+  vars:
+    vm_name_prefix: "{{ vm_name_prefix | default('d12vm') }}"
+  tasks:
+    - name: List all VMs
+      community.libvirt.virt:
+        command: list_vms
+        uri: "{{ lookup('env', 'LIBVIRT_DEFAULT_URI') }}"
+      register: all_vms
+
+    - name: Display all VMs
+      ansible.builtin.debug:
+        msg: "All VMs: {{ all_vms.list_vms }}"
+
+    - name: Display vm_name_prefix
+      ansible.builtin.debug:
+        msg: "VM name prefix is set to: '{{ vm_name_prefix }}'"
+
+    - name: Filter VMs with the specified prefix
+      set_fact:
+        vms_to_delete: "{{ all_vms.list_vms | select('match', '^' + vm_name_prefix + '.*') | list }}"
+
+    - name: Display VMs to delete
+      ansible.builtin.debug:
+        msg: "VMs to delete: {{ vms_to_delete }}"
+
+    - name: Destroy VMs
+      community.libvirt.virt:
+        name: "{{ item }}"
+        state: destroyed
+        uri: "{{ lookup('env', 'LIBVIRT_DEFAULT_URI') }}"
+      loop: "{{ vms_to_delete }}"
+      when: vms_to_delete | length > 0
+
+    - name: Undefine VMs with NVRAM
+      ansible.builtin.command:
+        cmd: "virsh undefine --nvram {{ item }}"
+      loop: "{{ vms_to_delete }}"
+      when: vms_to_delete | length > 0

@@ -1,0 +1,11 @@
+---
+plugin: community.libvirt.libvirt
+uri: 'qemu+ssh://atrawog@a/system'
+groups:
+  server: "'k3s-server' in inventory_hostname"
+  agent: "'k3s-agent' in inventory_hostname"
+
+keyed_groups: []
+
+compose:
+  ansible_host: inventory_hostname

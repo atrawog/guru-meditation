@@ -1,0 +1,23 @@
+#cloud-config
+hostname: {{ vm_name }}
+ssh_pwauth: true
+users:
+  - name: {{ vm_user }}
+    gecos: "{{ vm_user }}"
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: users
+    lock_passwd: false
+    passwd: {{ vm_password | password_hash('sha512') }}
+    ssh_authorized_keys:
+      - "{{ ssh_public_key }}"
+packages:
+  - qemu-guest-agent
+  - nftables
+  - open-iscsi
+runcmd:
+  - apt-get update
+  - apt-get upgrade -y
+  - systemctl enable qemu-guest-agent
+  - systemctl enable nftables
+  - systemctl enableiscsid
+  - systemctl reboot

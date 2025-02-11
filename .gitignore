@@ -177,3 +177,11 @@ config.secrets
 *.secret
 _build
 _jupyter
+
+.pixi
+data/
+media/
+.pixi
+artifacts/
+chat_history*.md
+

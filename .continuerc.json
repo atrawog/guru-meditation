@@ -103,6 +103,12 @@
   ],
     "models": [
       {
+        "title": "Deepseek-R1 14B",
+        "provider": "ollama",
+        "model": "deepseek-r1:14b ",
+        "contextLength": 100000
+      },
+      {
         "title": "StarCoder2 15B",
         "provider": "ollama",
         "model": "starcoder2:15b",
@@ -117,6 +123,11 @@
         "title": "Llama 3.1 8B",
         "provider": "ollama",
         "model": "llama3.1:8b"
+      },
+      {
+        "title": "Ministral-8B-Instruct-2410",
+        "provider": "ollama",
+        "model": "ministral-8b-instruct-2410:latest"
       }
     ],
     "tabAutocompleteModel": {
@@ -296,6 +307,10 @@
     {
         "title": "Cloudflare - Learning",
         "startUrl": "https://www.cloudflare.com/learning/ai/what-is-artificial-intelligence/"
+    },
+    {
+        "title": "Unsloth",
+        "startUrl": "https://docs.unsloth.ai/"
     }
     ]
 }

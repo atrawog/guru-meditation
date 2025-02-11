@@ -1,0 +1,53 @@
+---
+- name: Copy QCOW2 image
+  ansible.builtin.copy:
+    src: /var/lib/libvirt/images/{{ base_image_name }}.qcow2
+    dest: /var/lib/libvirt/images/{{ vm_name }}.qcow2
+    remote_src: yes
+  become: true
+
+- name: Resize the QCOW2 image to the desired size
+  ansible.builtin.command:
+    cmd: qemu-img resize /var/lib/libvirt/images/{{ vm_name }}.qcow2 {{ vm_disk_size }}
+  become: true
+
+- name: Create cloud-init user data file from template
+  ansible.builtin.template:
+    src: cloud-init-user-data.j2
+    dest: /var/lib/libvirt/images/{{ vm_name }}-user-data
+  become: true
+
+- name: Create cloud-init meta-data file
+  ansible.builtin.copy:
+    dest: /var/lib/libvirt/images/{{ vm_name }}-meta-data
+    content: |
+      instance-id: {{ vm_name }}
+      local-hostname: {{ vm_name }}
+  become: true
+
+- name: Create cloud-init configuration ISO
+  ansible.builtin.command:
+    cmd: >
+      cloud-localds /var/lib/libvirt/images/{{ vm_name }}-seed.iso
+      /var/lib/libvirt/images/{{ vm_name }}-user-data
+      /var/lib/libvirt/images/{{ vm_name }}-meta-data
+  become: true
+
+
+- name: Define the VM
+  community.libvirt.virt:
+    command: define
+    xml: "{{ lookup('template', 'libvirt_vm_cloudinit.xml.j2') }}"
+    autostart: true
+  vars:
+    vm_disk_path: /var/lib/libvirt/images/{{ vm_name }}.qcow2
+    vm_cloud_init_iso: /var/lib/libvirt/images/{{ vm_name }}-seed.iso
+    vm_name: "{{ vm_name }}"
+    vm_memory: "{{ vm_memory }}"
+    vm_vcpus: "{{ vm_vcpus }}"
+    vm_network: "{{ vm_network }}"
+
+- name: Start the VM
+  community.libvirt.virt:
+    name: "{{ vm_name }}"
+    state: running
