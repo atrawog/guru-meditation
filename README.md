@@ -78,3 +78,9 @@ This project is licensed under the Creative Commons Attribution-ShareAlike 4.0 I
 ## Acknowledgments
 
 We would like to thank the developers and maintainers of the various tools and libraries integrated into Guru-Meditation.
+
+# Pixi
+sudo rm -rf pixi.* .pixi/
+pixi init -c conda-forge -c pytorch -c nvidia
+pixi add python=3.11
+pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git xformers trl peft accelerate bitsandbytes vllm torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy

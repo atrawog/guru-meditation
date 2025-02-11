@@ -177,7 +177,10 @@ config.secrets
 *.secret
 _build
 _jupyter
+jupyterhub_cookie_secret
+jupyterhub.sqlite
 
+# pixi
 .pixi
 data/
 media/
@@ -185,3 +188,7 @@ media/
 artifacts/
 chat_history*.md
 
+
+# pixi environments
+.pixi
+*.egg-info
