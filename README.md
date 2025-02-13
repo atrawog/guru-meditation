@@ -83,7 +83,14 @@ We would like to thank the developers and maintainers of the various tools and l
 sudo rm -rf pixi.* .pixi/
 pixi init -c conda-forge -c pytorch -c nvidia
 pixi add python=3.11
-pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git xformers trl peft accelerate bitsandbytes vllm torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book==2.0.0a1  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy
+pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git peft accelerate bitsandbytes torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book==2.0.0a1  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy bitsandbytes accelerate xformers==0.0.29 peft triton cut_cross_entropy unsloth_zoo protobuf datasets huggingface_hub hf_transfer tqdm ipywidgets trl pip
+pixi run pip install vllm
+pixi task add jupyterhub "python -m jupyterhub --config  /workspace/config/jupyterhub_config.py"
+pixi task add jupyterbook "python -m jupyter book start"
+
+jupyterhub = "python -m jupyterhub --config  /workspace/config/jupyterhub_config.py"
+jupyterbook = "python -m jupyter book start"
+
 
 # UV
 rm -rf .venv pyproject.toml uv.lock 
@@ -91,3 +98,9 @@ uv init .
 uv python install 3.11
 uv add open-webui
 
+# VLLM
+
+vllm serve meta-llama/Llama-2-7b-hf \
+    --port 8090 \
+    --enable-lora \
+    --lora-modules sql-lora=/workspace/.cache/huggingface/hub/models--yard1--llama-2-7b-sql-lora-test/snapshots/0dfa347e8877a4d4ed19ee56c140fa518470028c/

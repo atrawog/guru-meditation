@@ -195,3 +195,4 @@ chat_history*.md
 .webui_secret_key
 hello.py
 secrets.env
+jupyterhub-proxy.pid

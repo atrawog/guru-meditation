@@ -1,5 +1,5 @@
 {
-    "name": "gurum2",
+    "name": "gurum",
     "build": {
         "dockerfile": "Containerfile"
     },
