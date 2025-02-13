@@ -6,6 +6,8 @@ cd /workspace
 
 /usr/local/bin/fixpermission.sh
 /usr/local/bin/setpassword.sh
+/usr/local/bin/pixi install
+/usr/sbin/uv sync
 echo "Starting supervisord"
 sudo /usr/sbin/supervisord -c /etc/supervisord.conf > /dev/null 2>&1 &
 # sudo /usr/sbin/supervisord -c /etc/supervisord.conf &
