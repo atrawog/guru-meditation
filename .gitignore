@@ -177,11 +177,21 @@ config.secrets
 *.secret
 _build
 _jupyter
+jupyterhub_cookie_secret
+jupyterhub.sqlite
 
+# pixi
 .pixi
 data/
 media/
 .pixi
 artifacts/
 chat_history*.md
+.venv
 
+# pixi environments
+.pixi
+*.egg-info
+.webui_secret_key
+hello.py
+secrets.env

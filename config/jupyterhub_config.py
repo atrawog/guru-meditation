@@ -2,9 +2,12 @@
 import os
 from dotenv import dotenv_values
 
-# Load environment variables from the .env file
-env_file = '/workspace/config/config.env'
-env_vars = dotenv_values(env_file)
+# Load environment variables from the .env files
+env_files = ['/workspace/config/config.env', '/workspace/config/secrets.env']
+
+env_vars = {}
+for file in env_files:
+    env_vars.update(dotenv_values(file))
 
 # Set the spawner's environment variables
 c.Spawner.environment = env_vars
