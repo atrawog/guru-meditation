@@ -83,4 +83,11 @@ We would like to thank the developers and maintainers of the various tools and l
 sudo rm -rf pixi.* .pixi/
 pixi init -c conda-forge -c pytorch -c nvidia
 pixi add python=3.11
-pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git xformers trl peft accelerate bitsandbytes vllm torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy
+pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git xformers trl peft accelerate bitsandbytes vllm torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book==2.0.0a1  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy
+
+# UV
+rm -rf .venv pyproject.toml uv.lock 
+uv init .
+uv python install 3.11
+uv add open-webui
+

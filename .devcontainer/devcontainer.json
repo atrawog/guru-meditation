@@ -1,11 +1,12 @@
 {
-    "name": "gurum",
+    "name": "gurum2",
     "build": {
         "dockerfile": "Containerfile"
     },
     "runArgs": [
-    //    "--gpus=all",
+        "--gpus=all",
         "--env-file=config/config.env",
+        "--env-file=config/secrets.env",
         "--hostname=gurum" 
     ],
     "forwardPorts": [8000],

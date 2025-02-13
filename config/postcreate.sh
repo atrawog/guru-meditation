@@ -4,17 +4,11 @@
 
 cd /workspace
 
-# Load environment variables from config.env file
-set -a
-if [[ -f /workspace/config/config.env ]]; then
-  source /workspace/config/config.env
-fi
-set +a
-
 /usr/local/bin/fixpermission.sh
 /usr/local/bin/setpassword.sh
 echo "Starting supervisord"
 sudo /usr/sbin/supervisord -c /etc/supervisord.conf > /dev/null 2>&1 &
+# sudo /usr/sbin/supervisord -c /etc/supervisord.conf &
 
 socket_path="/run/supervisor.sock"
 echo "Checking for supervisor socket at ${socket_path}..."
@@ -34,7 +28,7 @@ if [ "${JUPYTERBOOK_ENABLE}" = "true" ]; then
     # Loop to check the status of jupyterbook
     while true; do
         # Get the status of jupyterbook
-        status=$(supervisorctl status jupyjupyterbookterhub | awk '{print $2}')
+        status=$(supervisorctl status jupyterbook | awk '{print $2}')
 
         # Check if the status is RUNNING
         if [ "$status" == "RUNNING" ]; then
@@ -97,4 +91,29 @@ if [ "${OLLAMA_ENABLE}" = "true" ]; then
     done
 else
     echo "OLLAMA_ENABLE is not set. Skipping ollama startup."
+fi
+
+
+if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
+    echo "OPENWEBUI_ENABLE is set. Proceeding to start ollama."
+
+    # Start openwebui using supervisorctl
+    supervisorctl start openwebui
+
+    # Loop to check the status of openwebui
+    while true; do
+        # Get the status of openwebui
+        status=$(supervisorctl status openwebui | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "openwebui is running."
+            break
+        else
+            echo "Waiting for openwebui to start..."
+            sleep 1
+        fi
+    done
+else
+    echo "OPENWEBUI_ENABLE is not set. Skipping openwebui startup."
 fi

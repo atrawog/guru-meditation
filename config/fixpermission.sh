@@ -2,13 +2,6 @@
 # set -euxo pipefail
 # set -x
 
-# Load environment variables from config.env file
-set -a
-if [[ -f /workspace/config/config.env ]]; then
-  source /workspace/config/config.env
-fi
-set +a
-
 USER_NAME=${USER_NAME:-atrawog}
 LOCAL_UID=${LOCAL_UID:-1000}
 LOCAL_GID=${LOCAL_GID:-1000}

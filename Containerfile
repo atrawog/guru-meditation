@@ -6,18 +6,16 @@ FROM ${BASE_IMAGE}:${BASE_VERSION}
 ARG ARCH_BASE=""
 ARG ARCH_AI=""
 ARG ARCH_EXTRA=""
-ARG ARCH_TESTING=""
+ARG ARCH_YAY=""
 ARG DOCKER_GID=957
 
 # Install base development tools, sudo, pixi, and other dependencies
 RUN groupadd -g $DOCKER_GID docker
-RUN pacman -Syu --noconfirm ${ARCH_BASE} && \
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm ${ARCH_BASE} && \
     pacman -Scc --noconfirm
-RUN pacman -Syu --noconfirm ${ARCH_EXTRA} && \
+RUN pacman -S --noconfirm ${ARCH_EXTRA} && \
     pacman -Scc --noconfirm
-RUN pacman -Syu --noconfirm ${ARCH_AI} && \
-    pacman -Scc --noconfirm
-RUN pacman -Syu --noconfirm ${ARCH_TESTING} && \
+RUN pacman -S --noconfirm ${ARCH_AI} && \
     pacman -Scc --noconfirm
 
 ARG PIXI_VERSION=v0.40.0   
@@ -45,21 +43,29 @@ RUN groupadd --gid ${USER_GID} ${USER_NAME} && \
 RUN mkdir -p /workspace && \
     chown -R ${USER_NAME}:${USER_NAME} /workspace
 
+USER ${USER_NAME}
+WORKDIR ${HOME}
+ENV MAKEFLAGS="-j$(nproc)"
+
+RUN git clone https://aur.archlinux.org/yay.git && \
+    cd yay && \
+    makepkg -si --noconfirm && \
+    cd .. && rm -rf yay
+
+RUN yay -S --noconfirm ${ARCH_YAY} && \
+    yay -Scc --noconfirm --noconfirm
+
+USER root
+
 COPY config/supervisord.conf /etc/supervisord.conf
 COPY config/*.ini /etc/supervisor.d/
 COPY config/*.sh /usr/local/bin/
 
-EXPOSE 3000
-EXPOSE 8000
-EXPOSE 11434
-
 USER ${USER_NAME}
-WORKDIR ${HOME}
-
-# RUN git clone https://aur.archlinux.org/yay.git && \
-#    cd yay && \
-#    makepkg -si --noconfirm && \
-#    cd .. && rm -rf yay
-
 WORKDIR /workspace
 ENTRYPOINT ["/usr/local/bin/shell.sh"]
+
+EXPOSE 3000
+EXPOSE 8000
+EXPOSE 8080
+EXPOSE 11434

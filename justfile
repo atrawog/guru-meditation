@@ -2,7 +2,7 @@
 
 # Load environment variables from config.env
 set dotenv-load := true
-set dotenv-filename := "config/config.env"
+set dotenv-filename := "config/container.env"
 set dotenv-required := true
 set export := true
 
@@ -12,7 +12,7 @@ TIMESTAMP := `date '+%Y%m%d.%H%M'`
 # Build container image
 build:
     # Load environment variables
-    set -a; source config/config.env; set +a; \
+    set -a; source config/container.env; set +a; \
     # Build Docker image with specified build arguments
     docker build \
         --build-arg BASE_IMAGE="$BASE_IMAGE" \
@@ -20,7 +20,7 @@ build:
         --build-arg ARCH_BASE="$ARCH_BASE" \
         --build-arg ARCH_AI="$ARCH_AI" \
         --build-arg ARCH_EXTRA="$ARCH_EXTRA" \
-        --build-arg ARCH_TESTING="$ARCH_TESTING" \
+        --build-arg ARCH_YAY="$ARCH_YAY" \
         --build-arg USER_NAME=$USER_NAME \
         --build-arg USER_UID=$USER_UID \
         --build-arg USER_GID=$USER_GID \
@@ -34,7 +34,7 @@ build:
 # Run a shell in the container
 shell:
     # Load environment variables
-    set -a; source config/config.env; set +a; \
+    set -a; source config/container.env; set +a; \
     # Run Docker container with specified options
     docker run \
         --hostname ${HOSTNAME} \

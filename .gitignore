@@ -187,8 +187,11 @@ media/
 .pixi
 artifacts/
 chat_history*.md
-
+.venv
 
 # pixi environments
 .pixi
 *.egg-info
+.webui_secret_key
+hello.py
+secrets.env
