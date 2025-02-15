@@ -3,6 +3,7 @@
 # set -x
 
 cd /workspace
+mkdir -p /workspace/.jupyter
 
 /usr/local/bin/fixpermission.sh
 /usr/local/bin/setpassword.sh
