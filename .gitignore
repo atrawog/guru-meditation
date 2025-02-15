@@ -196,3 +196,5 @@ chat_history*.md
 hello.py
 secrets.env
 jupyterhub-proxy.pid
+.continue
+log/

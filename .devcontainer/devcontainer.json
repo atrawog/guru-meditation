@@ -9,8 +9,7 @@
         "--env-file=config/secrets.env",
         "--hostname=gurum" 
     ],
-    "forwardPorts": [8000],
-    "appPort": [ "8000:8000" ],
+    "forwardPorts": [3000,3001,8000,8001,8010,8011],
     "customizations": {
         "vscode": {
             "settings": {
@@ -66,7 +65,7 @@
         "ms-python.vscode-pylance",
         "saoudrizwan.claude-dev"
     ]
-    "remoteUser": "atrawog",
+    "remoteUser": "gm",
     "workspaceFolder": "/workspace",
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind",

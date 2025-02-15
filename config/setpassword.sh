@@ -12,7 +12,7 @@ if [[ -f /workspace/config/secrets.env ]]; then
 fi
 set +a
 
-USER_NAME=${USER_NAME:-atrawog}
+USER_NAME=${USER_NAME:-gm}
 
 # Set the password for the user
 if [ -n "$USER_PASSWORD" ]; then
