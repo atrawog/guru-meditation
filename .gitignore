@@ -190,11 +190,10 @@ chat_history*.md
 .venv
 
 # pixi environments
-.pixi
 *.egg-info
 .webui_secret_key
 hello.py
 secrets.env
 jupyterhub-proxy.pid
 .continue
-log/
+.jupyter
