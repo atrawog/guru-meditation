@@ -18,8 +18,7 @@ build:
         --build-arg BASE_IMAGE="$BASE_IMAGE" \
         --build-arg BASE_VERSION="$BASE_VERSION" \
         --build-arg ARCH_BASE="$ARCH_BASE" \
-        --build-arg ARCH_AI="$ARCH_AI" \
-        --build-arg ARCH_EXTRA="$ARCH_EXTRA" \
+        --build-arg ARCH_DEV="$ARCH_DEV" \
         --build-arg ARCH_YAY="$ARCH_YAY" \
         --build-arg USER_NAME=$USER_NAME \
         --build-arg USER_UID=$USER_UID \

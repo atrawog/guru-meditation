@@ -1,5 +1,5 @@
 {
-    "name": "gurum",
+    "name": "gurum-dev",
     "build": {
         "dockerfile": "Containerfile"
     },
@@ -66,7 +66,7 @@
         "ms-python.vscode-pylance",
         "saoudrizwan.claude-dev"
     ]
-    "remoteUser": "atrawog",
+    "remoteUser": "gm",
     "workspaceFolder": "/workspace",
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind",

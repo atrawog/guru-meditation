@@ -4,8 +4,7 @@ ARG BASE_VERSION=base-devel
 FROM ${BASE_IMAGE}:${BASE_VERSION}
 
 ARG ARCH_BASE=""
-ARG ARCH_AI=""
-ARG ARCH_EXTRA=""
+ARG ARCH_DEV=""
 ARG ARCH_YAY=""
 ARG DOCKER_GID=957
 
@@ -13,17 +12,16 @@ ARG DOCKER_GID=957
 RUN groupadd -g $DOCKER_GID docker
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm ${ARCH_BASE} && \
     pacman -Scc --noconfirm
-RUN pacman -S --noconfirm ${ARCH_EXTRA} && \
+RUN pacman -S --noconfirm ${ARCH_DEV} && \
     pacman -Scc --noconfirm
-RUN pacman -S --noconfirm ${ARCH_AI} && \
-    pacman -Scc --noconfirm
+
 
 ARG PIXI_VERSION=v0.40.0   
 RUN curl -Ls \
     "https://github.com/prefix-dev/pixi/releases/download/${PIXI_VERSION}/pixi-$(uname -m)-unknown-linux-musl" \
     -o /usr/local/bin/pixi && chmod +x /usr/local/bin/pixi
 
-ARG USER_NAME=atrawog
+ARG USER_NAME=gm
 ARG USER_UID=1000
 ARG USER_GID=1000
 
