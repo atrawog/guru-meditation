@@ -44,6 +44,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/5e/9a/a7dc8c604243eebd17c8160d261572047234b07d739ce5afb45b8a7a26df/ansible_core-2.18.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/58/46/44577e2e58de8b9c9398e1ee08b6c697bb2581446209cbfd2639cced66f5/ansible_runner-2.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/53/18/a56e2fe47b259bb52201093a3a9d4a32014f9d85071ad07e9d60600890ca/ansicolors-1.1.8-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/74/86/e81814e542d1eaeec84d2312bec93a99b9ef1d78d9bfae1fc5dd74abdf15/anthropic-0.45.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/eb/e7f063ad1fec6b3178a3cd82d1a3c4de82cccf283fc42746168188e1cdd5/anyio-4.8.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a4/6a/e8a041599e78b6b3752da48000b14c8d1e8a04ded09c88c714ba047f34f5/argon2_cffi-23.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/f7/378254e6dd7ae6f31fe40c8649eea7d4832a42243acaf0f1fff9083b2bed/argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
@@ -57,14 +58,20 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/f9/49/6abb616eb3cbab6a7cca303dc02fdf3836de2e0b834bf966a7f5271a34d8/beautifulsoup4-4.13.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/db/9d/9382259196d7ad7f3550702390081224e673a705e75b5660ee377b592fc0/bitsandbytes-0.45.2-py3-none-manylinux_2_24_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/fc/55/96142937f66150805c25c4d0f31ee4132fd33497753400734f9dfdcbdc66/bleach-6.2.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/39/99/7f5c7a16e205e19089e7f0d8716e9d1a5207bf4736f82a7d0c602bd0a40c/boto3-1.36.21-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7b/b4/8f1dc71437d12a61ca1daac534bc32fa6ccf207011eab7465d8c8a46dc06/botocore-1.36.21-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/4e/de4ff18bcf55857ba18d3a4bd48c8a9fde6bb0980c9d20b263f05387fd88/cachetools-5.5.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/38/fc/bce832fd4fd99766c04d1ee0eead6b0ec6486fb100ae5e74c1d91292b982/certifi-2025.1.31-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/52/1b/1472d714ca3f05d016c0b2779321af55e4c9efeabc852557e1e528f3330a/certipy-0.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ff/6b/d45873c5e0242196f042d555526f92aa9e0c32355a1be1ff8c27f077fd37/cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/88/83/489e9504711fa05d8dde1574996408026bdbdbd938f23be67deebb5eca92/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e5221787892c/click-8.1.8-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e9/da/824b92d9942f4e472702488857914bdd50f73021efea15b4cad9aca8ecef/click_plugins-1.1.1-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/73/86/43fa9f15c5b9fb6e82620428827cd3c284aa933431405d1bcf5231ae3d3e/cligj-0.7.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7e/e8/64c37fadfc2816a7701fa8a6ed8d87327c7d54eacfbfb6edab14a2f2be75/cloudpickle-3.1.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/50/c6/cffec9284d9713d28c6235a653a9a34c49b0f880f00cfa002252cdb8d033/cohere-5.13.12-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e6/75/49e5bfe642f71f272236b5b2d2691cf915a7283cc0ceda56357b61daa538/comm-0.2.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/6f/b3/b4ac838711fd74a2b4e6f746703cf9dd2cf5462d17dac07e349234e21b97/ConfigArgParse-1.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/06/91/2ae0fd55ee9c414f8aecd5ea1e8e01a5fac973a02259e60177c1179dbbaa/configurable_http_proxy-0.3.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/07/4b/290b4c3efd6417a8b0c284896de19b1d5855e6dbdb97d2a35e68fa42de85/croniter-6.0.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/e7/cfb18011821cc5f9b21efb3f94f3241e3a658d267a3bf3a0f45543858ed8/cryptography-44.0.1-cp39-abi3-manylinux_2_28_x86_64.whl
@@ -79,6 +86,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c9/7a/cef76fd8438a42f96db64ddaa85280485a9c395e7df3db8158cfec1eee34/dill-0.3.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/30/a8/fec2e908b32a1b7868bd4c6144ac12ce1eb22460e18d6a2f093da2a8283d/distributed-2025.2.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/68/1b/e0a87d256e40e8c888847551b20a017a6b98139178505dc7ffb96f04e954/dnspython-2.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d5/7c/e9fcff7623954d86bdc17782036cbf715ecab1bec4847c008557affe1ca8/docstring_parser-0.16-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/3c/82/d118accb66f9048acbc4ff91592755c24d52f54cce40d6b0b2a0ce351cf5/dogpile.cache-1.3.4-py3-none-any.whl
@@ -89,10 +97,13 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/7b/8f/c4d9bafc34ad7ad5d8dc16dd1347ee0e507a52c3adb6bfa8887e1c6a26ba/executing-2.2.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/cb/cf/9caa08ca4e21ab935f82be0713e5d60566140414c3fff7932d9427c8fd72/faiss_cpu-1.10.0-cp311-cp311-manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/8f/7d/2d6ce181d7a5f51dedb8c06206cbf0ec026a99bf145edd309f9e17c3282f/fastapi-0.115.8-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/c8/45/dba0cc08cf42500dd0f1e552e0fefe1cd81c47099d99277828a1081cbd87/fastavro-1.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/d7/3a/a0b1c764426622287c9b6547d4ea637c406bc884141814df4a5ebab3ab9b/fastcore-1.7.29-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/61/bf/fd60001b3abc5222d8eaa4a204cd8c0ae78e75adc688f33ce4bf25b7fafa/fasteners-0.19-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/90/2b/0817a2b257fe88725c25589d89aec060581aabf668707a8d03b2e9e0cb2a/fastjsonschema-2.21.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/89/ec/00d68c4ddfedfe64159999e5f8a98fb8442729a63e2077eb9dcd89623d27/filelock-3.17.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7b/2e/3f80ba2fda9b8686681f0a1b18c8e95ad152ada1d6fb1d3f25281d9229fd/fiona-1.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/6b/b6/82c7e601d6d3c3278c40b7bd35e17e82aa227f050aa9f66cb7b7fce29471/fire-0.7.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/cf/58/8acf1b3e91c58313ce5cb67df61001fc9dcd21be4fadb76c1a2d540e09ed/fqdn-1.5.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b8/5f/c10123e8d64867bc9b4f2f510a32042a306ff5fcd7e2e09e5ae5100ee333/frozenlist-1.5.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
@@ -100,16 +111,26 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/ad/2b/dcdb2dfdc61676ac25676f10f71c9bba77bf81227f3e73f5c678462bffaf/futurist-3.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c4/64/7d344cfcef5efddf9cf32f59af7f855828e9d74b5f862eddf5bfd9f25323/geopandas-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4c/ad/f7204c0c38175f300621af7880737ca6379dd633e9b7d1c0a8fc2748f0dc/ghapi-1.0.6-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7c/a3/67b8a6ff5001a1d8864922f2d6488dc2a14367ceb651bc3f09a947f2f306/google_ai_generativelanguage-0.6.15-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/11/51/1d325e9b7358f15dca82e1ed91413c5cecb9d4665da6c44cb8dd348deeaa/google_api_core-1.34.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/9c/e8/ca1efe224166a4c77ac92b4314b90f2fb70fdde1f763c1613ba3b9f50752/google_api_python_client-2.161.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/9d/47/603554949a37bca5b7f894d51896a9c534b9eab808e2520a748e081669d0/google_auth-2.38.0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/be/8a/fe34d2f3f9470a27b01c9e76226965863f153d5fbe276f83608562e49c04/google_auth_httplib2-0.2.0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/9b/b0/6c6af327a8a6ef3be6fe79be1d6f1e2914d6c363aa6b081b93396f4460a7/google_generativeai-0.8.4-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/89/30/2bd0eb03a7dee7727cd2ec643d1e992979e62d5e7443507381cce0455132/googleapis_common_protos-1.67.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f7/4b/1c9695aa24f808e156c8f4813f685d975ca73c000c2a5056c514c64980f6/greenlet-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/9f/e5/5316b239380b8b2ad30373eb5bb25d9fd36c0375e94a98a0a60ea357d254/grpcio-1.70.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/14/32/754cd4474790239c7436a7a9490bc0c4a0a2ed604cb9a940151a3b1055b9/grpcio_status-1.48.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d6/d8/f87ea6f42456254b48915970ed98e993110521e9263472840174d32c880d/hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/87/f5/72347bc88306acb359581ac4d52f23c0ef445b57157adedb9aee0cd689d2/httpcore-1.0.7-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/a8/6c/d2fbdaaa5959339d53ba38e94c123e4e84b8fbc4b84beb0e70d7c1608486/httplib2-0.22.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/9b/a181f281f65d776426002f330c31849b86b31fc9d848db62e16f03ff739f/httpx_sse-0.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ea/da/6c2bea5327b640920267d3bf2c9fc114cfbd0a5de234d81cda80cc9e33c8/huggingface_hub-0.28.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/79/9d/0fb148dc4d6fa4a7dd1d8378168d9b4cd8d4560a6fbf6f0121c5fc34eb68/importlib_metadata-8.6.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/a4/ed/1f1afb2e9e7f38a545d628f864d562a5ae64fe6f7a10e28ffb9b185b4e89/importlib_resources-6.5.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/94/5c/368ae6c01c7628438358e6d337c19b05425727fbb221d2a3c4303c372f42/ipykernel-6.29.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e7/e1/f4474a7ecdb7745a820f6f6039dc43c66add40f1bcc66485607d93571af6/ipython-8.32.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/22/2d/9c0b76f2f9cc0ebede1b9371b6f317243028ed60b90705863d493bae622e/ipywidgets-8.1.5-py3-none-any.whl
@@ -117,6 +138,10 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/7b/55/e5326141505c5d5e34c5e0935d2908a74e4561eca44108fbfb9c13d2911a/isoduration-20.11.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c0/5a/9cac0c82afec3d09ccd97c8b6502d48f165f9124db81b4bcb90b4af974ee/jedi-0.19.2-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f8/9b/92f9da9a9e107d019bcf883cd9125fa1690079f323f5a9d5c6986eeec3c0/jiter-0.8.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/31/b4/b9b800c45527aadd64d5b442f9b932b00648617eb5d63d2c7a6587b7cafc/jmespath-1.0.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/0b/7d/9fdbbc1a574be43f9820735ca8df0caf8b159856201d9b21fd73932342bc/jpype1-1.5.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/aa/42/797895b952b682c3dafe23b1834507ee7f02f4d6299b65aaa61425763278/json5-0.10.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/73/07/02e16ed01e04a374e644b575638ec7987ae846d25ad97bcc9945a3ee4b0e/jsonpatch-1.33-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/35/5a/73ecb3d82f8615f32ccdadeb9356726d6cae3a4bbc840b437ceb95708063/jsonpath_ng-1.7.0-py3-none-any.whl
@@ -143,9 +168,16 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/87/ec/7811a3cf9fdfee3ee88e54d08fcbc3fabe7c1b6e4059826c59d7b795651c/kombu-5.4.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/df/14/a59acfe4b3095f2a4fd8d13b348853a69c8f1ed4bce9af00d1b31351a88e/kubernetes-32.0.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/93/83/a4b41a1cf8b22fd708104d50edf98b720aa28647d3083d83b8348927a786/langchain-0.3.18-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f3/b3/111e1f41b0044687ec0c34c921ad52d33d2802282b1bc45343d5dd923fb6/langchain_anthropic-0.3.7-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/9f/d9/34239d9d6b92dd87fb36d48435639a3862d3decc124fd6419d36144b8739/langchain_aws-0.2.12-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f4/f0/0f2e4dc99c52d458cd23f7d8d18bb25280ff49529a4fd34e59a92faf6d46/langchain_cohere-0.4.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7e/31/39c30cab465774835e2c18d3746587e6fd0c9f7265b1c6b1fcd2e1684dd2/langchain_community-0.3.17-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/94/63/be67b8ab4f4cf07b8da65a67ff72ea870ec8cf9f2e95e3a5b837a5604d1b/langchain_core-0.3.35-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/c2/6a/b6cbd72b820d31cf35fe677cc844220aa82a09b92167d43ade815acdec4d/langchain_google_genai-2.0.9-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/00/4f/bc04e96e95fb39bcb7afdad95a66ccb2037ca3d5a6e8c76cfd8f46e87f0f/langchain_mistralai-0.2.6-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/5f/a0/1796982537830d0cd65d7e56982372ae3a55e3495dbab6792e61b07d6a56/langchain_nvidia_ai_endpoints-0.3.9-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/85/72/f7301340a544fea1c139c64590044f0beb5bfba889b8f6e50766b933e660/langchain_ollama-0.2.3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/b5/49/302754c09f955e4a240efe83e48f4e79149d50ca52b3f4731365f1be94b1/langchain_openai-0.3.6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4c/f8/6b82af988e65af9697f6a2f25373fb173fd32d48b62772a8773c5184c870/langchain_text_splitters-0.3.6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8b/e4/5380e8229c442e406404977d2ec71a9db6a3e6a89fce7791c6ad7cd2bdbe/langsmith-0.3.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e3/ed/b9b4b68c909fb91ef806d74c65ce563a792a2b1a95715fc284a4a473dff9/libvirt-python-11.0.0.tar.gz
@@ -194,6 +226,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/87/20/199b8713428322a2f22b722c62b8cc278cc53dffa9705d744484b5035ee9/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/7e/80/cab10959dc1faead58dc8384a781dfbf93cb4d33d50988f7a69f1b7c9bbe/oauthlib-3.2.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/31/83/c3ffac86906c10184c88c2e916460806b072a2cfe34cdcaf3a0c0e836d39/ollama-0.4.7-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/67/a0/e1fe4e87218639fc0a0927da5266c2978eaa0e2eb5437479ee64a11535bb/openai-1.63.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b2/c4/c1fb835bb23ad788a39aa9ebb8821d51b1c03588d9a9e4ca7de5b354fdd5/orjson-3.10.15-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/10/2d/318b2b631f68e0fc221ba8f45d163bf810cdb795cf242fe85ad3e5d45639/os_service_types-1.7.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/3d/ab/b5dcb7545b2c5b93a0ce0a674553861bebcade27dfd05788a4f279b2d70f/oslo.cache-3.10.0-py3-none-any.whl
@@ -234,6 +267,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/ff/c2/ab7d37426c179ceb9aeb109a85cda8948bb269b7561a0be870cc656eefe4/prometheus_client-0.21.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e4/ea/d836f008d33151c7a1f62caf3d8dd782e4d15f6a43897f64480c2b8de2ad/prompt_toolkit-3.0.50-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/85/14/01fe53580a8e1734ebb704a3482b7829a0ef4ea68d356141cf0994d9659b/propcache-0.2.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/42/c3/59308ccc07b34980f9d532f7afc718a9f32b40e52cde7a740df8d55632fb/proto_plus-1.26.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8d/14/619e24a4c70df2901e1f4dbc50a6291eb63a759172558df326347dce1f0d/protobuf-3.20.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/bf/b9/b0eb3f3cbcb734d930fdf839431606844a825b23eaf9a6ab371edac8162c/psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/22/a6/858897256d0deac81a172289110f31629fc4cee19b6f01283303e18c8db3/ptyprocess-0.7.0-py2.py3-none-any.whl
@@ -260,6 +294,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/eb/38/ac33370d784287baa1c3d538978b5e2ea064d4c1b93ffbd12826c190dd10/pytz-2025.1-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/75/e4/2c27590dfc9992f73aabbeb9241ae20220bd9452df27483b6e56d3975cc5/PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/de/b9/3e0fbddf8b87454e914501d368171466a12550c70355b3844115947d68ea/pyzmq-26.2.1-cp311-cp311-manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/b9/cb/4ad0a72c4273182a8aa57ebb2c8395d1a4fc607322e7992418585e8ebb1e/r5py-0.1.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c1/b1/3baf80dc6d2b7bc27a95a67752d0208e410351e3feb4eb78de5f77454d8d/referencing-0.36.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/bf/ce/0d0e61429f603bac433910d99ef1a02ce45a8967ffbe3cbee48599e62d88/regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b0/30/6cc0c95f0b59ad4b3b9163bff7cdcf793cc96fac64cf398ff26271f5cf5e/repoze.lru-0.7-py3-none-any.whl
@@ -274,6 +309,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/9b/d4/d3c7d029de6287ff7bd048e628920d4336b4f8d82cfc00ff078bdbb212a3/Routes-2.5.1-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/78/79c128c3e71abbc8e9739ac27af11dc0f91840a86fce67ff83c65d1ba195/rpds_py-0.22.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/49/97/fa78e3d2f65c02c8e1268b9aba606569fe97f6c8f7c2d74394553347c145/rsa-4.9-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/1b/ac/e7dc469e49048dc57f62e0c555d2ee3117fa30813d2a1a2962cce3a2a82a/s3transfer-0.11.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c5/dc/8952caafa9a10a3c0f40fa86bacf3190ae7f55fa5eef87415b97b29cb97f/safetensors-0.5.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/40/b0/4562db6223154aa4e22f939003cb92514c79f3d4dccca3444253fd17f902/Send2Trash-1.8.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fb/12/2f5c8d4764b00033cf1c935b702d3bb878d10be9f0b87f0253495832d85f/sentencepiece-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
@@ -315,13 +351,16 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/dc/3c/51dab98b5d6636ba8de20551c81c2f76a503a9b33e969a0360e17ef79f9f/trl-0.15.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f2/53/9465dedf2d69fe26008e7732cf6e0a385e387c240869e7d54eed49782a3c/typeguard-4.4.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/0f/b3/ca41df24db5eb99b00d97f89d7674a90cb6b3134c52fb8121b6d8d30f15c/types_python_dateutil-2.9.0.20241206-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e8/c1/48474fbead512b70ccdb4f81ba5eb4a58f69d100ba19f17c92c0c4f50ae6/types_PyYAML-6.0.12.20241230-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/d7/01/485b3026ff90e5190b5e24f1711522e06c79f4a56c8f4b95848ac072e20f/types_requests-2.32.0.20241016-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/65/f3/107a22063bf27bdccf2024833d3445f4eea42b2e598abfbd46f6a63b6cb0/typing_inspect-0.9.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/49/9a/fd7a7e4441d3eaec04c2cb87486edb7351eca20352a4e63d9cc391d233ac/tyro-0.9.14-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/0f/dd/84f10e23edd882c6f968c21c2434fe67bd4a528967067515feca9e611e5e/tzdata-2025.1-py2.py3-none-any.whl
-      - pypi: git+https://github.com/unslothai/unsloth.git@d1d15f1d14f1168837d29b9c08e9b6d63945d469
+      - pypi: git+https://github.com/unslothai/unsloth#d1d15f1d14f1168837d29b9c08e9b6d63945d469
       - pypi: https://files.pythonhosted.org/packages/04/5a/df46fa3bb0954bca9ae55dd290c45fdf7ba24708956419ff5b9b2b645745/unsloth_zoo-2025.2.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e7/00/3fca040d7cf8a32776d3d81a00c8ee7457e00f80c649f1e4a863c8321ae9/uri_template-1.3.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/81/c0/7461b49cd25aeece13766f02ee576d1db528f1c37ce69aee300e075b485b/uritemplate-4.1.1-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/03/ff/7c0c86c43b3cbb927e0ccc0255cb4057ceba4799cd44ae95174ce8e8b5b2/vine-5.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/db/a8/8f9cc6749331186e6a513bfe3745454f81d25f6e34c6024f88f80c71ed28/voluptuous-0.15.2-py3-none-any.whl
@@ -592,6 +631,22 @@ packages:
   name: ansicolors
   version: 1.1.8
   sha256: 00d2dde5a675579325902536738dd27e4fac1fd68f773fe36c21044eb559e187
+- pypi: https://files.pythonhosted.org/packages/74/86/e81814e542d1eaeec84d2312bec93a99b9ef1d78d9bfae1fc5dd74abdf15/anthropic-0.45.2-py3-none-any.whl
+  name: anthropic
+  version: 0.45.2
+  sha256: ecd746f7274451dfcb7e1180571ead624c7e1195d1d46cb7c70143d2aedb4d35
+  requires_dist:
+  - anyio>=3.5.0,<5
+  - distro>=1.7.0,<2
+  - httpx>=0.23.0,<1
+  - jiter>=0.4.0,<1
+  - pydantic>=1.9.0,<3
+  - sniffio
+  - typing-extensions>=4.10,<5
+  - boto3>=1.28.57 ; extra == 'bedrock'
+  - botocore>=1.31.57 ; extra == 'bedrock'
+  - google-auth>=2,<3 ; extra == 'vertex'
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/46/eb/e7f063ad1fec6b3178a3cd82d1a3c4de82cccf283fc42746168188e1cdd5/anyio-4.8.0-py3-none-any.whl
   name: anyio
   version: 4.8.0
@@ -610,7 +665,7 @@ packages:
   - pytest>=7.0 ; extra == 'test'
   - trustme ; extra == 'test'
   - truststore>=0.9.1 ; python_full_version >= '3.10' and extra == 'test'
-  - uvloop>=0.21 ; python_full_version < '3.14' and platform_python_implementation == 'CPython' and platform_system != 'Windows' and extra == 'test'
+  - uvloop>=0.21 ; python_full_version < '3.14' and platform_python_implementation == 'CPython' and sys_platform != 'win32' and extra == 'test'
   - packaging ; extra == 'doc'
   - sphinx~=7.4 ; extra == 'doc'
   - sphinx-rtd-theme ; extra == 'doc'
@@ -803,6 +858,27 @@ packages:
   - webencodings
   - tinycss2>=1.1.0,<1.5 ; extra == 'css'
   requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/39/99/7f5c7a16e205e19089e7f0d8716e9d1a5207bf4736f82a7d0c602bd0a40c/boto3-1.36.21-py3-none-any.whl
+  name: boto3
+  version: 1.36.21
+  sha256: f94faa7cf932d781f474d87f8b4c14a033af95ac1460136b40d75e7a30086ef0
+  requires_dist:
+  - botocore>=1.36.21,<1.37.0
+  - jmespath>=0.7.1,<2.0.0
+  - s3transfer>=0.11.0,<0.12.0
+  - botocore[crt]>=1.21.0,<2.0a0 ; extra == 'crt'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/7b/b4/8f1dc71437d12a61ca1daac534bc32fa6ccf207011eab7465d8c8a46dc06/botocore-1.36.21-py3-none-any.whl
+  name: botocore
+  version: 1.36.21
+  sha256: 24a7052e792639dc2726001bd474cd0aaa959c1e18ddd92c17f3adc6efa1b132
+  requires_dist:
+  - jmespath>=0.7.1,<2.0.0
+  - python-dateutil>=2.1,<3.0.0
+  - urllib3>=1.25.4,<1.27 ; python_full_version < '3.10'
+  - urllib3>=1.25.4,!=2.2.0,<3 ; python_full_version >= '3.10'
+  - awscrt==0.23.8 ; extra == 'crt'
+  requires_python: '>=3.8'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-h4bc722e_7.conda
   sha256: 5ced96500d945fb286c9c838e54fa759aa04a7129c59800f0846b4335cee770d
   md5: 62ee74e96c5ebb0af99386de58cf9553
@@ -862,14 +938,47 @@ packages:
   version: 8.1.8
   sha256: 63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2
   requires_dist:
-  - colorama ; platform_system == 'Windows'
+  - colorama ; sys_platform == 'win32'
   - importlib-metadata ; python_full_version < '3.8'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/e9/da/824b92d9942f4e472702488857914bdd50f73021efea15b4cad9aca8ecef/click_plugins-1.1.1-py2.py3-none-any.whl
+  name: click-plugins
+  version: 1.1.1
+  sha256: 5d262006d3222f5057fd81e1623d4443e41dcda5dc815c06b442aa3c02889fc8
+  requires_dist:
+  - click>=4.0
+  - pytest>=3.6 ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - wheel ; extra == 'dev'
+  - coveralls ; extra == 'dev'
+- pypi: https://files.pythonhosted.org/packages/73/86/43fa9f15c5b9fb6e82620428827cd3c284aa933431405d1bcf5231ae3d3e/cligj-0.7.2-py3-none-any.whl
+  name: cligj
+  version: 0.7.2
+  sha256: c1ca117dbce1fe20a5809dc96f01e1c2840f6dcc939b3ddbb1111bf330ba82df
+  requires_dist:
+  - click>=4.0
+  - pytest-cov ; extra == 'test'
+  requires_python: '>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,<4'
 - pypi: https://files.pythonhosted.org/packages/7e/e8/64c37fadfc2816a7701fa8a6ed8d87327c7d54eacfbfb6edab14a2f2be75/cloudpickle-3.1.1-py3-none-any.whl
   name: cloudpickle
   version: 3.1.1
   sha256: c8c5a44295039331ee9dad40ba100a9c7297b6f988e50e87ccdf3765a668350e
   requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/50/c6/cffec9284d9713d28c6235a653a9a34c49b0f880f00cfa002252cdb8d033/cohere-5.13.12-py3-none-any.whl
+  name: cohere
+  version: 5.13.12
+  sha256: 2a043591a3e5280b47716a6b311e4c7f58e799364113a9cb81b50cd4f6c95f7e
+  requires_dist:
+  - fastavro>=1.9.4,<2.0.0
+  - httpx>=0.21.2
+  - httpx-sse==0.4.0
+  - pydantic>=1.9.2
+  - pydantic-core>=2.18.2,<3.0.0
+  - requests>=2.0.0,<3.0.0
+  - tokenizers>=0.15,<1
+  - types-requests>=2.0.0,<3.0.0
+  - typing-extensions>=4.0.0
+  requires_python: '>=3.9,<4.0'
 - pypi: https://files.pythonhosted.org/packages/e6/75/49e5bfe642f71f272236b5b2d2691cf915a7283cc0ceda56357b61daa538/comm-0.2.2-py3-none-any.whl
   name: comm
   version: 0.2.2
@@ -878,6 +987,16 @@ packages:
   - traitlets>=4
   - pytest ; extra == 'test'
   requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/6f/b3/b4ac838711fd74a2b4e6f746703cf9dd2cf5462d17dac07e349234e21b97/ConfigArgParse-1.7-py3-none-any.whl
+  name: configargparse
+  version: '1.7'
+  sha256: d249da6591465c6c26df64a9f73d2536e743be2f244eb3ebe61114af2f94f86b
+  requires_dist:
+  - mock ; extra == 'test'
+  - pyyaml ; extra == 'test'
+  - pytest ; extra == 'test'
+  - pyyaml ; extra == 'yaml'
+  requires_python: '>=3.5'
 - pypi: https://files.pythonhosted.org/packages/06/91/2ae0fd55ee9c414f8aecd5ea1e8e01a5fac973a02259e60177c1179dbbaa/configurable_http_proxy-0.3.0-py2.py3-none-any.whl
   name: configurable-http-proxy
   version: 0.3.0
@@ -930,11 +1049,11 @@ packages:
   sha256: e46f26d348f6a67927d17e65c5a212e795be13dcad5b10a77a200d6b8102d9d1
   requires_dist:
   - torch
-  - triton ; platform_system == 'Linux'
+  - triton ; sys_platform == 'linux'
   - pytest ; extra == 'test'
   - transformers>=4.44.2 ; extra == 'transformers'
   - cut-cross-entropy[transformers] ; extra == 'all'
-  - deepspeed>=0.15.1 ; platform_system != 'Darwin' and extra == 'all'
+  - deepspeed>=0.15.1 ; sys_platform != 'darwin' and extra == 'all'
   - accelerate>=0.34.2 ; extra == 'all'
   - datasets>=3.1.0 ; extra == 'all'
   - huggingface-hub>=0.26.2 ; extra == 'all'
@@ -1189,6 +1308,11 @@ packages:
   - urllib3>=1.26.5
   - zict>=3.0.0
   requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl
+  name: distro
+  version: 1.9.0
+  sha256: 7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2
+  requires_python: '>=3.6'
 - pypi: https://files.pythonhosted.org/packages/68/1b/e0a87d256e40e8c888847551b20a017a6b98139178505dc7ffb96f04e954/dnspython-2.7.0-py3-none-any.whl
   name: dnspython
   version: 2.7.0
@@ -1320,6 +1444,18 @@ packages:
   - pydantic-settings>=2.0.0 ; extra == 'all'
   - pydantic-extra-types>=2.0.0 ; extra == 'all'
   requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/c8/45/dba0cc08cf42500dd0f1e552e0fefe1cd81c47099d99277828a1081cbd87/fastavro-1.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: fastavro
+  version: 1.10.0
+  sha256: 0a678153b5da1b024a32ec3f611b2e7afd24deac588cb51dd1b0019935191a6d
+  requires_dist:
+  - cramjam ; extra == 'codecs'
+  - zstandard ; extra == 'codecs'
+  - lz4 ; extra == 'codecs'
+  - cramjam ; extra == 'snappy'
+  - zstandard ; extra == 'zstandard'
+  - lz4 ; extra == 'lz4'
+  requires_python: '>=3.9'
 - pypi: https://files.pythonhosted.org/packages/d7/3a/a0b1c764426622287c9b6547d4ea637c406bc884141814df4a5ebab3ab9b/fastcore-1.7.29-py3-none-any.whl
   name: fastcore
   version: 1.7.29
@@ -1373,6 +1509,32 @@ packages:
   - virtualenv>=20.28.1 ; extra == 'testing'
   - typing-extensions>=4.12.2 ; python_full_version < '3.11' and extra == 'typing'
   requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl
+  name: filetype
+  version: 1.2.0
+  sha256: 7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25
+- pypi: https://files.pythonhosted.org/packages/7b/2e/3f80ba2fda9b8686681f0a1b18c8e95ad152ada1d6fb1d3f25281d9229fd/fiona-1.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: fiona
+  version: 1.10.1
+  sha256: 94bd3d448f09f85439e4b77c38b9de1aebe3eef24acc72bd631f75171cdfde51
+  requires_dist:
+  - attrs>=19.2.0
+  - certifi
+  - click~=8.0
+  - click-plugins>=1.0
+  - cligj>=0.5
+  - importlib-metadata ; python_full_version < '3.10'
+  - fiona[calc,s3,test] ; extra == 'all'
+  - pyparsing ; extra == 'calc'
+  - shapely ; extra == 'calc'
+  - boto3>=1.3.1 ; extra == 's3'
+  - aiohttp ; extra == 'test'
+  - fsspec ; extra == 'test'
+  - fiona[s3] ; extra == 'test'
+  - pytest>=7 ; extra == 'test'
+  - pytest-cov ; extra == 'test'
+  - pytz ; extra == 'test'
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/6b/b6/82c7e601d6d3c3278c40b7bd35e17e82aa227f050aa9f66cb7b7fce29471/fire-0.7.0.tar.gz
   name: fire
   version: 0.7.0
@@ -1541,6 +1703,42 @@ packages:
   - jsonref ; extra == 'dev'
   - matplotlib ; extra == 'dev'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/7c/a3/67b8a6ff5001a1d8864922f2d6488dc2a14367ceb651bc3f09a947f2f306/google_ai_generativelanguage-0.6.15-py3-none-any.whl
+  name: google-ai-generativelanguage
+  version: 0.6.15
+  sha256: 5a03ef86377aa184ffef3662ca28f19eeee158733e45d7947982eb953c6ebb6c
+  requires_dist:
+  - google-api-core[grpc]>=1.34.1,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*,<3.0.0.dev0
+  - google-auth>=2.14.1,!=2.24.0,!=2.25.0,<3.0.0.dev0
+  - proto-plus>=1.22.3,<2.0.0.dev0
+  - protobuf>=3.20.2,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0.dev0
+  - proto-plus>=1.25.0,<2.0.0.dev0 ; python_full_version >= '3.13'
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/11/51/1d325e9b7358f15dca82e1ed91413c5cecb9d4665da6c44cb8dd348deeaa/google_api_core-1.34.1-py3-none-any.whl
+  name: google-api-core
+  version: 1.34.1
+  sha256: 52bcc9d9937735f8a3986fa0bbf9135ae9cf5393a722387e5eced520e39c774a
+  requires_dist:
+  - googleapis-common-protos>=1.56.2,<2.0.dev0
+  - protobuf>=3.19.5,!=3.20.0,!=3.20.1,<4.0.0.dev0,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
+  - google-auth>=1.25.0,<3.0.dev0
+  - requests>=2.18.0,<3.0.0.dev0
+  - grpcio>=1.33.2,<2.0.dev0 ; extra == 'grpc'
+  - grpcio-status>=1.33.2,<2.0.dev0 ; extra == 'grpc'
+  - grpcio-gcp>=0.2.2,<1.0.dev0 ; extra == 'grpcgcp'
+  - grpcio-gcp>=0.2.2,<1.0.dev0 ; extra == 'grpcio-gcp'
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/9c/e8/ca1efe224166a4c77ac92b4314b90f2fb70fdde1f763c1613ba3b9f50752/google_api_python_client-2.161.0-py2.py3-none-any.whl
+  name: google-api-python-client
+  version: 2.161.0
+  sha256: 9476a5a4f200bae368140453df40f9cda36be53fa7d0e9a9aac4cdb859a26448
+  requires_dist:
+  - httplib2>=0.19.0,<1.dev0
+  - google-auth>=1.32.0,!=2.24.0,!=2.25.0,<3.0.0.dev0
+  - google-auth-httplib2>=0.2.0,<1.0.0
+  - google-api-core>=1.31.5,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0
+  - uritemplate>=3.0.1,<5
+  requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/9d/47/603554949a37bca5b7f894d51896a9c534b9eab808e2520a748e081669d0/google_auth-2.38.0-py2.py3-none-any.whl
   name: google-auth
   version: 2.38.0
@@ -1560,6 +1758,43 @@ packages:
   - pyu2f>=0.1.5 ; extra == 'reauth'
   - requests>=2.20.0,<3.0.0.dev0 ; extra == 'requests'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/be/8a/fe34d2f3f9470a27b01c9e76226965863f153d5fbe276f83608562e49c04/google_auth_httplib2-0.2.0-py2.py3-none-any.whl
+  name: google-auth-httplib2
+  version: 0.2.0
+  sha256: b65a0a2123300dd71281a7bf6e64d65a0759287df52729bdd1ae2e47dc311a3d
+  requires_dist:
+  - google-auth
+  - httplib2>=0.19.0
+- pypi: https://files.pythonhosted.org/packages/9b/b0/6c6af327a8a6ef3be6fe79be1d6f1e2914d6c363aa6b081b93396f4460a7/google_generativeai-0.8.4-py3-none-any.whl
+  name: google-generativeai
+  version: 0.8.4
+  sha256: e987b33ea6decde1e69191ddcaec6ef974458864d243de7191db50c21a7c5b82
+  requires_dist:
+  - google-ai-generativelanguage==0.6.15
+  - google-api-core
+  - google-api-python-client
+  - google-auth>=2.15.0
+  - protobuf
+  - pydantic
+  - tqdm
+  - typing-extensions
+  - absl-py ; extra == 'dev'
+  - black ; extra == 'dev'
+  - nose2 ; extra == 'dev'
+  - pandas ; extra == 'dev'
+  - pytype ; extra == 'dev'
+  - pyyaml ; extra == 'dev'
+  - pillow ; extra == 'dev'
+  - ipython ; extra == 'dev'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/89/30/2bd0eb03a7dee7727cd2ec643d1e992979e62d5e7443507381cce0455132/googleapis_common_protos-1.67.0-py2.py3-none-any.whl
+  name: googleapis-common-protos
+  version: 1.67.0
+  sha256: 579de760800d13616f51cf8be00c876f00a9f146d3e6510e19d1f4111758b741
+  requires_dist:
+  - protobuf>=3.20.2,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0.dev0
+  - grpcio>=1.44.0,<2.0.0.dev0 ; extra == 'grpc'
+  requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/f7/4b/1c9695aa24f808e156c8f4813f685d975ca73c000c2a5056c514c64980f6/greenlet-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
   name: greenlet
   version: 3.1.1
@@ -1570,6 +1805,22 @@ packages:
   - objgraph ; extra == 'test'
   - psutil ; extra == 'test'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/9f/e5/5316b239380b8b2ad30373eb5bb25d9fd36c0375e94a98a0a60ea357d254/grpcio-1.70.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: grpcio
+  version: 1.70.0
+  sha256: e7831a0fc1beeeb7759f737f5acd9fdcda520e955049512d68fda03d91186eea
+  requires_dist:
+  - grpcio-tools>=1.70.0 ; extra == 'protobuf'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/14/32/754cd4474790239c7436a7a9490bc0c4a0a2ed604cb9a940151a3b1055b9/grpcio_status-1.48.2-py3-none-any.whl
+  name: grpcio-status
+  version: 1.48.2
+  sha256: 2c33bbdbe20188b2953f46f31af669263b6ee2a9b2d38fa0d36ee091532e21bf
+  requires_dist:
+  - protobuf>=3.12.0
+  - grpcio>=1.48.2
+  - googleapis-common-protos>=1.5.5
+  requires_python: '>=3.6'
 - pypi: https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl
   name: h11
   version: 0.14.0
@@ -1594,6 +1845,14 @@ packages:
   - socksio==1.* ; extra == 'socks'
   - trio>=0.22.0,<1.0 ; extra == 'trio'
   requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/a8/6c/d2fbdaaa5959339d53ba38e94c123e4e84b8fbc4b84beb0e70d7c1608486/httplib2-0.22.0-py3-none-any.whl
+  name: httplib2
+  version: 0.22.0
+  sha256: 14ae0a53c1ba8f3d37e9e27cf37eabb0fb9980f435ba405d546948b009dd64dc
+  requires_dist:
+  - pyparsing>=2.4.2,<3 ; python_full_version < '3.0'
+  - pyparsing>=2.4.2,!=3.0.0,!=3.0.1,!=3.0.2,!=3.0.3,<4 ; python_full_version >= '3.1'
+  requires_python: '>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*'
 - pypi: https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl
   name: httpx
   version: 0.28.1
@@ -1764,12 +2023,33 @@ packages:
   - pytest-enabler>=2.2 ; extra == 'enabler'
   - pytest-mypy ; extra == 'type'
   requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/a4/ed/1f1afb2e9e7f38a545d628f864d562a5ae64fe6f7a10e28ffb9b185b4e89/importlib_resources-6.5.2-py3-none-any.whl
+  name: importlib-resources
+  version: 6.5.2
+  sha256: 789cfdc3ed28c78b67a06acb8126751ced69a3d5f79c095a98298cd8a760ccec
+  requires_dist:
+  - zipp>=3.1.0 ; python_full_version < '3.10'
+  - pytest>=6,!=8.1.* ; extra == 'test'
+  - zipp>=3.17 ; extra == 'test'
+  - jaraco-test>=5.4 ; extra == 'test'
+  - sphinx>=3.5 ; extra == 'doc'
+  - jaraco-packaging>=9.3 ; extra == 'doc'
+  - rst-linker>=1.9 ; extra == 'doc'
+  - furo ; extra == 'doc'
+  - sphinx-lint ; extra == 'doc'
+  - jaraco-tidelift>=1.4 ; extra == 'doc'
+  - pytest-checkdocs>=2.4 ; extra == 'check'
+  - pytest-ruff>=0.2.1 ; sys_platform != 'cygwin' and extra == 'check'
+  - pytest-cov ; extra == 'cover'
+  - pytest-enabler>=2.2 ; extra == 'enabler'
+  - pytest-mypy ; extra == 'type'
+  requires_python: '>=3.9'
 - pypi: https://files.pythonhosted.org/packages/94/5c/368ae6c01c7628438358e6d337c19b05425727fbb221d2a3c4303c372f42/ipykernel-6.29.5-py3-none-any.whl
   name: ipykernel
   version: 6.29.5
   sha256: afdb66ba5aa354b09b91379bac28ae4afebbb30e8b39510c9690afb7a10421b5
   requires_dist:
-  - appnope ; platform_system == 'Darwin'
+  - appnope ; sys_platform == 'darwin'
   - comm>=0.1.1
   - debugpy>=1.6.5
   - ipython>=7.23.1
@@ -1932,6 +2212,32 @@ packages:
   - markupsafe>=2.0
   - babel>=2.7 ; extra == 'i18n'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/f8/9b/92f9da9a9e107d019bcf883cd9125fa1690079f323f5a9d5c6986eeec3c0/jiter-0.8.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: jiter
+  version: 0.8.2
+  sha256: 8b9931fd36ee513c26b5bf08c940b0ac875de175341cbdd4fa3be109f0492586
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/31/b4/b9b800c45527aadd64d5b442f9b932b00648617eb5d63d2c7a6587b7cafc/jmespath-1.0.1-py3-none-any.whl
+  name: jmespath
+  version: 1.0.1
+  sha256: 02e2e4cc71b5bcab88332eebf907519190dd9e6e82107fa7f83b1003a6252980
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl
+  name: joblib
+  version: 1.4.2
+  sha256: 06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/0b/7d/9fdbbc1a574be43f9820735ca8df0caf8b159856201d9b21fd73932342bc/jpype1-1.5.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: jpype1
+  version: 1.5.2
+  sha256: b900e154826a076118d074166596f1d817e113e07084bf0c9c43d8064a86ab77
+  requires_dist:
+  - packaging
+  - readthedocs-sphinx-ext ; extra == 'docs'
+  - sphinx ; extra == 'docs'
+  - sphinx-rtd-theme ; extra == 'docs'
+  - pytest ; extra == 'tests'
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/aa/42/797895b952b682c3dafe23b1834507ee7f02f4d6299b65aaa61425763278/json5-0.10.0-py3-none-any.whl
   name: json5
   version: 0.10.0
@@ -2337,7 +2643,7 @@ packages:
   version: 2.4.2
   sha256: 2aa406d4754dcd2ec4fe749b6a2e15f0bc8a6c5c8f6b549419583715d8146230
   requires_dist:
-  - jupyter-server>=2.0.1,<3 ; platform_system != 'Emscripten'
+  - jupyter-server>=2.0.1,<3 ; sys_platform != 'emscripten'
   - coverage ; extra == 'test'
   - pytest ; extra == 'test'
   - pytest-asyncio ; extra == 'test'
@@ -2545,6 +2851,37 @@ packages:
   - langchain-aws ; extra == 'aws'
   - langchain-deepseek ; extra == 'deepseek'
   requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/f3/b3/111e1f41b0044687ec0c34c921ad52d33d2802282b1bc45343d5dd923fb6/langchain_anthropic-0.3.7-py3-none-any.whl
+  name: langchain-anthropic
+  version: 0.3.7
+  sha256: adec0a1daabd3c25249753c6cd625654917fb9e3feee68e72c7dc3f4449c0f3c
+  requires_dist:
+  - anthropic>=0.45.0,<1
+  - langchain-core>=0.3.34,<1.0.0
+  - pydantic>=2.7.4,<3.0.0
+  requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/9f/d9/34239d9d6b92dd87fb36d48435639a3862d3decc124fd6419d36144b8739/langchain_aws-0.2.12-py3-none-any.whl
+  name: langchain-aws
+  version: 0.2.12
+  sha256: 1ed3713aa9cd68016b29af1f6eba74c705d2d3e4b6b1fd92cd359cb69eb06851
+  requires_dist:
+  - boto3>=1.35.74
+  - langchain-core>=0.3.27,<0.4.0
+  - numpy>=1,<2 ; python_full_version < '3.12'
+  - numpy>=1.26.0,<3 ; python_full_version >= '3.12'
+  - pydantic>=2,<3
+  requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/f4/f0/0f2e4dc99c52d458cd23f7d8d18bb25280ff49529a4fd34e59a92faf6d46/langchain_cohere-0.4.2-py3-none-any.whl
+  name: langchain-cohere
+  version: 0.4.2
+  sha256: 1d4e5f9212daa64d997785de7a79e3e1c3971acba1d987f1a99a9a1be6acfb40
+  requires_dist:
+  - cohere>=5.12.0,<6.0
+  - langchain-community>=0.3.0,<0.4.0
+  - langchain-core>=0.3.27,<0.4.0
+  - pydantic>=2,<3
+  - types-pyyaml>=6.0.12.20240917,<7.0.0.0
+  requires_python: '>=3.9,<4.0'
 - pypi: https://files.pythonhosted.org/packages/7e/31/39c30cab465774835e2c18d3746587e6fd0c9f7265b1c6b1fcd2e1684dd2/langchain_community-0.3.17-py3-none-any.whl
   name: langchain-community
   version: 0.3.17
@@ -2578,6 +2915,35 @@ packages:
   - pydantic>=2.5.2,<3.0.0 ; python_full_version < '3.12.4'
   - pydantic>=2.7.4,<3.0.0 ; python_full_version >= '3.12.4'
   requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/c2/6a/b6cbd72b820d31cf35fe677cc844220aa82a09b92167d43ade815acdec4d/langchain_google_genai-2.0.9-py3-none-any.whl
+  name: langchain-google-genai
+  version: 2.0.9
+  sha256: 48d8c78c42048d54f40dff333db9d359746644e0feb0e08b5eabdf34ad7149ca
+  requires_dist:
+  - filetype>=1.2.0,<2.0.0
+  - google-generativeai>=0.8.0,<0.9.0
+  - langchain-core>=0.3.27,<0.4.0
+  - pydantic>=2,<3
+  requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/00/4f/bc04e96e95fb39bcb7afdad95a66ccb2037ca3d5a6e8c76cfd8f46e87f0f/langchain_mistralai-0.2.6-py3-none-any.whl
+  name: langchain-mistralai
+  version: 0.2.6
+  sha256: a7fde8094641e89309e2ee0db57fa06a1270b461c19d44e5d93e518270bbafee
+  requires_dist:
+  - httpx>=0.25.2,<1
+  - httpx-sse>=0.3.1,<1
+  - langchain-core>=0.3.33,<0.4.0
+  - pydantic>=2,<3
+  - tokenizers>=0.15.1,<1
+  requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/5f/a0/1796982537830d0cd65d7e56982372ae3a55e3495dbab6792e61b07d6a56/langchain_nvidia_ai_endpoints-0.3.9-py3-none-any.whl
+  name: langchain-nvidia-ai-endpoints
+  version: 0.3.9
+  sha256: c9328d0080200f2df728466ad92df121014996bbb0c1d8518231dbb64b66d4f2
+  requires_dist:
+  - aiohttp>=3.9.1,<4.0.0
+  - langchain-core>=0.3.0,<0.4
+  requires_python: '>=3.9,<4.0'
 - pypi: https://files.pythonhosted.org/packages/85/72/f7301340a544fea1c139c64590044f0beb5bfba889b8f6e50766b933e660/langchain_ollama-0.2.3-py3-none-any.whl
   name: langchain-ollama
   version: 0.2.3
@@ -2585,6 +2951,15 @@ packages:
   requires_dist:
   - langchain-core>=0.3.33,<0.4.0
   - ollama>=0.4.4,<1
+  requires_python: '>=3.9,<4.0'
+- pypi: https://files.pythonhosted.org/packages/b5/49/302754c09f955e4a240efe83e48f4e79149d50ca52b3f4731365f1be94b1/langchain_openai-0.3.6-py3-none-any.whl
+  name: langchain-openai
+  version: 0.3.6
+  sha256: 05f0869f6cc963e2ec9e2e54ea1038d9c2af784c67f0e217040dfc918b31649a
+  requires_dist:
+  - langchain-core>=0.3.35,<1.0.0
+  - openai>=1.58.1,<2.0.0
+  - tiktoken>=0.7,<1
   requires_python: '>=3.9,<4.0'
 - pypi: https://files.pythonhosted.org/packages/4c/f8/6b82af988e65af9697f6a2f25373fb173fd32d48b62772a8773c5184c870/langchain_text_splitters-0.3.6-py3-none-any.whl
   name: langchain-text-splitters
@@ -3309,6 +3684,24 @@ packages:
   - httpx>=0.27,<0.29
   - pydantic>=2.9.0,<3.0.0
   requires_python: '>=3.8,<4.0'
+- pypi: https://files.pythonhosted.org/packages/67/a0/e1fe4e87218639fc0a0927da5266c2978eaa0e2eb5437479ee64a11535bb/openai-1.63.0-py3-none-any.whl
+  name: openai
+  version: 1.63.0
+  sha256: a664dfc78f0a05ca46c3e21f344f840cf6bf7174f13cfa9de214ed28bfca1dda
+  requires_dist:
+  - anyio>=3.5.0,<5
+  - distro>=1.7.0,<2
+  - httpx>=0.23.0,<1
+  - jiter>=0.4.0,<1
+  - pydantic>=1.9.0,<3
+  - sniffio
+  - tqdm>4
+  - typing-extensions>=4.11,<5
+  - numpy>=1 ; extra == 'datalib'
+  - pandas-stubs>=1.1.0.11 ; extra == 'datalib'
+  - pandas>=1.2.3 ; extra == 'datalib'
+  - websockets>=13,<15 ; extra == 'realtime'
+  requires_python: '>=3.8'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.4.1-h7b32b05_0.conda
   sha256: cbf62df3c79a5c2d113247ddea5658e9ff3697b6e741c210656e239ecaf1768f
   md5: 41adf927e746dc75ecf0ef841c454e48
@@ -3855,12 +4248,12 @@ packages:
   - cryptography>=3.3
   - pynacl>=1.5
   - pyasn1>=0.1.7 ; extra == 'gssapi'
-  - gssapi>=1.4.1 ; platform_system != 'Windows' and extra == 'gssapi'
-  - pywin32>=2.1.8 ; platform_system == 'Windows' and extra == 'gssapi'
+  - gssapi>=1.4.1 ; sys_platform != 'win32' and extra == 'gssapi'
+  - pywin32>=2.1.8 ; sys_platform == 'win32' and extra == 'gssapi'
   - invoke>=2.0 ; extra == 'invoke'
   - pyasn1>=0.1.7 ; extra == 'all'
-  - gssapi>=1.4.1 ; platform_system != 'Windows' and extra == 'all'
-  - pywin32>=2.1.8 ; platform_system == 'Windows' and extra == 'all'
+  - gssapi>=1.4.1 ; sys_platform != 'win32' and extra == 'all'
+  - pywin32>=2.1.8 ; sys_platform == 'win32' and extra == 'all'
   - invoke>=2.0 ; extra == 'all'
   requires_python: '>=3.6'
 - pypi: https://files.pythonhosted.org/packages/c6/ac/dac4a63f978e4dcb3c6d3a78c4d8e0192a113d288502a1216950c41b1027/parso-0.8.4-py2.py3-none-any.whl
@@ -4047,6 +4440,14 @@ packages:
   version: 0.2.1
   sha256: cf6c4150f8c0e32d241436526f3c3f9cbd34429492abddbada2ffcff506c51af
   requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/42/c3/59308ccc07b34980f9d532f7afc718a9f32b40e52cde7a740df8d55632fb/proto_plus-1.26.0-py3-none-any.whl
+  name: proto-plus
+  version: 1.26.0
+  sha256: bf2dfaa3da281fc3187d12d224c707cb57214fb2c22ba854eb0c105a3fb2d4d7
+  requires_dist:
+  - protobuf>=3.19.0,<6.0.0.dev0
+  - google-api-core>=1.31.5 ; extra == 'testing'
+  requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/8d/14/619e24a4c70df2901e1f4dbc50a6291eb63a759172558df326347dce1f0d/protobuf-3.20.3-py2.py3-none-any.whl
   name: protobuf
   version: 3.20.3
@@ -4138,7 +4539,7 @@ packages:
   - pydantic-core==2.27.2
   - typing-extensions>=4.12.2
   - email-validator>=2.0.0 ; extra == 'email'
-  - tzdata ; python_full_version >= '3.9' and platform_system == 'Windows' and extra == 'timezone'
+  - tzdata ; python_full_version >= '3.9' and sys_platform == 'win32' and extra == 'timezone'
   requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/a8/7c/b860618c25678bbd6d1d99dbdfdf0510ccb50790099b963ff78a124b754f/pydantic_core-2.27.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
   name: pydantic-core
@@ -4350,6 +4751,50 @@ packages:
   requires_dist:
   - cffi ; implementation_name == 'pypy'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/b9/cb/4ad0a72c4273182a8aa57ebb2c8395d1a4fc607322e7992418585e8ebb1e/r5py-0.1.2-py3-none-any.whl
+  name: r5py
+  version: 0.1.2
+  sha256: a3e146a04fd55bf489332de8d79e62fd8de55f35cc369757009b50ce34691b16
+  requires_dist:
+  - configargparse
+  - filelock
+  - fiona
+  - geopandas
+  - importlib-resources
+  - joblib
+  - jpype1
+  - numpy
+  - pandas>=2.1.0
+  - psutil
+  - pyproj
+  - requests
+  - shapely>=2.0
+  - contextily ; extra == 'docs'
+  - folium ; extra == 'docs'
+  - gitpython ; extra == 'docs'
+  - h3>=4.0.0b2 ; extra == 'docs'
+  - jupyterlab-myst ; extra == 'docs'
+  - mapclassify ; extra == 'docs'
+  - matplotlib ; extra == 'docs'
+  - myst-nb ; extra == 'docs'
+  - nbsphinx ; extra == 'docs'
+  - pybtex-apa7-style ; extra == 'docs'
+  - r5py-sampledata-helsinki>=0.1.1 ; extra == 'docs'
+  - r5py-sampledata-sao-paulo>=0.1.1 ; extra == 'docs'
+  - shapely ; extra == 'docs'
+  - sphinx ; extra == 'docs'
+  - sphinx-book-theme ; extra == 'docs'
+  - sphinx-design ; extra == 'docs'
+  - sphinxcontrib-bibtex ; extra == 'docs'
+  - sphinxcontrib-images ; extra == 'docs'
+  - pyarrow ; extra == 'tests'
+  - pytest ; extra == 'tests'
+  - pytest-asyncio ; extra == 'tests'
+  - pytest-cov ; extra == 'tests'
+  - pytest-lazy-fixtures ; extra == 'tests'
+  - r5py-sampledata-helsinki>=0.1.1 ; extra == 'tests'
+  - r5py-sampledata-sao-paulo>=0.1.1 ; extra == 'tests'
+  requires_python: '>=3.9'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8228510_1.conda
   sha256: 5435cf39d039387fbdc977b0a762357ea909a7694d9528ab40f005e9208744d7
   md5: 47d31b792659ce70f470b5c82fdfb7a4
@@ -4482,6 +4927,14 @@ packages:
   requires_dist:
   - pyasn1>=0.1.3
   requires_python: '>=3.6,<4'
+- pypi: https://files.pythonhosted.org/packages/1b/ac/e7dc469e49048dc57f62e0c555d2ee3117fa30813d2a1a2962cce3a2a82a/s3transfer-0.11.2-py3-none-any.whl
+  name: s3transfer
+  version: 0.11.2
+  sha256: be6ecb39fadd986ef1701097771f87e4d2f821f27f6071c872143884d2950fbc
+  requires_dist:
+  - botocore>=1.36.0,<2.0a0
+  - botocore[crt]>=1.36.0,<2.0a0 ; extra == 'crt'
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/c5/dc/8952caafa9a10a3c0f40fa86bacf3190ae7f55fa5eef87415b97b29cb97f/safetensors-0.5.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
   name: safetensors
   version: 0.5.2
@@ -4898,19 +5351,19 @@ packages:
   - networkx
   - jinja2
   - fsspec
-  - nvidia-cuda-nvrtc-cu12==12.4.127 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cuda-runtime-cu12==12.4.127 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cuda-cupti-cu12==12.4.127 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cudnn-cu12==9.1.0.70 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cublas-cu12==12.4.5.8 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cufft-cu12==11.2.1.3 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-curand-cu12==10.3.5.147 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cusolver-cu12==11.6.1.9 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-cusparse-cu12==12.3.1.170 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-nccl-cu12==2.21.5 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-nvtx-cu12==12.4.127 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - nvidia-nvjitlink-cu12==12.4.127 ; platform_machine == 'x86_64' and platform_system == 'Linux'
-  - triton==3.1.0 ; python_full_version < '3.13' and platform_machine == 'x86_64' and platform_system == 'Linux'
+  - nvidia-cuda-nvrtc-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cuda-runtime-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cuda-cupti-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cudnn-cu12==9.1.0.70 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cublas-cu12==12.4.5.8 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cufft-cu12==11.2.1.3 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-curand-cu12==10.3.5.147 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cusolver-cu12==11.6.1.9 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cusparse-cu12==12.3.1.170 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-nccl-cu12==2.21.5 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-nvtx-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-nvjitlink-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - triton==3.1.0 ; python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux'
   - sympy==1.12.1 ; python_full_version == '3.8.*'
   - setuptools ; python_full_version >= '3.12'
   - sympy==1.13.1 ; python_full_version >= '3.9'
@@ -4944,7 +5397,7 @@ packages:
   version: 4.67.1
   sha256: 26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2
   requires_dist:
-  - colorama ; platform_system == 'Windows'
+  - colorama ; sys_platform == 'win32'
   - pytest>=6 ; extra == 'dev'
   - pytest-cov ; extra == 'dev'
   - pytest-timeout ; extra == 'dev'
@@ -5435,6 +5888,18 @@ packages:
   version: 2.9.0.20241206
   sha256: e248a4bc70a486d3e3ec84d0dc30eec3a5f979d6e7ee4123ae043eedbb987f53
   requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/e8/c1/48474fbead512b70ccdb4f81ba5eb4a58f69d100ba19f17c92c0c4f50ae6/types_PyYAML-6.0.12.20241230-py3-none-any.whl
+  name: types-pyyaml
+  version: 6.0.12.20241230
+  sha256: fa4d32565219b68e6dee5f67534c722e53c00d1cfc09c435ef04d7353e1e96e6
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/d7/01/485b3026ff90e5190b5e24f1711522e06c79f4a56c8f4b95848ac072e20f/types_requests-2.32.0.20241016-py3-none-any.whl
+  name: types-requests
+  version: 2.32.0.20241016
+  sha256: 4195d62d6d3e043a4eaaf08ff8a62184584d2e8684e9d2aa178c7915a7da3747
+  requires_dist:
+  - urllib3>=2
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl
   name: typing-extensions
   version: 4.12.2
@@ -5454,7 +5919,7 @@ packages:
   sha256: 043a65306137b72b87f1a3e906874b25d0cf2f36add520d12b82a9c93dc5234c
   requires_dist:
   - backports-cached-property>=1.0.2 ; python_full_version < '3.8'
-  - colorama>=0.4.0 ; platform_system == 'Windows'
+  - colorama>=0.4.0 ; sys_platform == 'win32'
   - docstring-parser>=0.15
   - eval-type-backport>=0.1.3 ; python_full_version < '3.10'
   - rich>=11.1.0
@@ -5489,7 +5954,7 @@ packages:
   purls: []
   size: 122921
   timestamp: 1737119101255
-- pypi: git+https://github.com/unslothai/unsloth.git@d1d15f1d14f1168837d29b9c08e9b6d63945d469
+- pypi: git+https://github.com/unslothai/unsloth#d1d15f1d14f1168837d29b9c08e9b6d63945d469
   name: unsloth
   version: 2025.2.12
   requires_dist:
@@ -5595,38 +6060,38 @@ packages:
   - unsloth[huggingface] ; extra == 'cu118-torch260'
   - bitsandbytes>=0.45.1 ; extra == 'cu118-torch260'
   - unsloth[cu118onlytorch260] ; extra == 'cu118-torch260'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118only'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118only'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118only'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch211'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch211'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch211'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch212'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch212'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch212'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch220'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch220'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch220'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp312-cp312-manylinux2014_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu118onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp312-cp312-manylinux2014_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu118onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu118onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu118onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu118onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu118onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu118onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu118onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118only'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118only'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118only'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch211'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch211'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch211'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch212'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch212'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch212'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch220'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch220'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch220'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp312-cp312-manylinux2014_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu118onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp312-cp312-manylinux2014_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu118onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu118onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu118onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu118onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu118onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu118onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu118onlytorch260'
   - unsloth[huggingface] ; extra == 'cu121'
   - bitsandbytes>=0.43.3 ; extra == 'cu121'
   - unsloth[cu121only] ; extra == 'cu121'
@@ -5679,34 +6144,34 @@ packages:
   - unsloth[huggingface] ; extra == 'cu121-torch251'
   - bitsandbytes>=0.43.3 ; extra == 'cu121-torch251'
   - unsloth[cu121onlytorch251] ; extra == 'cu121-torch251'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121only'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121only'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121only'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch211'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch211'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch211'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch212'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch212'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch212'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch220'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch220'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch220'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp312-cp312-manylinux2014_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu121onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch230'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu121onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu121onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu121onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu121onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu121onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu121onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121only'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121only'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121only'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch211'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch211'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch211'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch212'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch212'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch212'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch220'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch220'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch220'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp310-cp310-manylinux2014_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp311-cp311-manylinux2014_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp312-cp312-manylinux2014_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu121onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp39-cp39-manylinux2014_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch230'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu121onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu121onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu121onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu121onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu121onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu121onlytorch251'
   - unsloth[huggingface] ; extra == 'cu124-ampere-torch240'
   - bitsandbytes>=0.43.3 ; extra == 'cu124-ampere-torch240'
   - unsloth[cu124onlytorch240] ; extra == 'cu124-ampere-torch240'
@@ -5735,38 +6200,38 @@ packages:
   - unsloth[huggingface] ; extra == 'cu124-torch260'
   - bitsandbytes>=0.45.1 ; extra == 'cu124-torch260'
   - unsloth[cu124onlytorch260] ; extra == 'cu124-torch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and platform_system == 'Windows' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and platform_system == 'Windows' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and platform_system == 'Windows' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and platform_system == 'Windows' and extra == 'cu124onlytorch240'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and platform_system == 'Windows' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and platform_system == 'Windows' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and platform_system == 'Windows' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and platform_system == 'Windows' and extra == 'cu124onlytorch250'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and platform_system == 'Windows' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and platform_system == 'Windows' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and platform_system == 'Windows' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and platform_system == 'Windows' and extra == 'cu124onlytorch251'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and platform_system == 'Windows' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and platform_system == 'Windows' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and platform_system == 'Windows' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu124onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and platform_system == 'Windows' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and sys_platform == 'win32' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and sys_platform == 'win32' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and sys_platform == 'win32' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and sys_platform == 'win32' and extra == 'cu124onlytorch240'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and sys_platform == 'win32' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and sys_platform == 'win32' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and sys_platform == 'win32' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and sys_platform == 'win32' and extra == 'cu124onlytorch250'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and sys_platform == 'win32' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and sys_platform == 'win32' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and sys_platform == 'win32' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and sys_platform == 'win32' and extra == 'cu124onlytorch251'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and sys_platform == 'win32' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and sys_platform == 'win32' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and sys_platform == 'win32' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu124onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and sys_platform == 'win32' and extra == 'cu124onlytorch260'
   - unsloth[huggingface] ; extra == 'cu126-ampere-torch260'
   - bitsandbytes>=0.45.1 ; extra == 'cu126-ampere-torch260'
   - unsloth[cu126onlytorch260] ; extra == 'cu126-ampere-torch260'
@@ -5774,13 +6239,13 @@ packages:
   - unsloth[huggingface] ; extra == 'cu126-torch260'
   - bitsandbytes>=0.45.1 ; extra == 'cu126-torch260'
   - unsloth[cu126onlytorch260] ; extra == 'cu126-torch260'
-  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and platform_system == 'Linux' and extra == 'cu126onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_system == 'Linux' and extra == 'cu126onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_system == 'Linux' and extra == 'cu126onlytorch260'
-  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and platform_system == 'Linux' and extra == 'cu126onlytorch260'
-  - packaging ; platform_system == 'Linux' and extra == 'flashattention'
-  - ninja ; platform_system == 'Linux' and extra == 'flashattention'
-  - flash-attn>=2.6.3 ; platform_system == 'Linux' and extra == 'flashattention'
+  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; python_full_version == '3.10.*' and sys_platform == 'linux' and extra == 'cu126onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and sys_platform == 'linux' and extra == 'cu126onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and sys_platform == 'linux' and extra == 'cu126onlytorch260'
+  - xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; python_full_version == '3.9.*' and sys_platform == 'linux' and extra == 'cu126onlytorch260'
+  - packaging ; sys_platform == 'linux' and extra == 'flashattention'
+  - ninja ; sys_platform == 'linux' and extra == 'flashattention'
+  - flash-attn>=2.6.3 ; sys_platform == 'linux' and extra == 'flashattention'
   - unsloth-zoo>=2025.2.5 ; extra == 'huggingface'
   - packaging ; extra == 'huggingface'
   - tyro ; extra == 'huggingface'
@@ -5801,10 +6266,10 @@ packages:
   - unsloth[huggingface] ; extra == 'kaggle'
   - unsloth[huggingface] ; extra == 'kaggle-new'
   - bitsandbytes>=0.43.3 ; extra == 'kaggle-new'
-  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and platform_system == 'Windows' and extra == 'triton'
-  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and platform_system == 'Windows' and extra == 'triton'
-  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and platform_system == 'Windows' and extra == 'triton'
-  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and platform_system == 'Windows' and extra == 'triton'
+  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp310-cp310-win_amd64.whl ; python_full_version == '3.10.*' and sys_platform == 'win32' and extra == 'triton'
+  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp311-cp311-win_amd64.whl ; python_full_version == '3.11.*' and sys_platform == 'win32' and extra == 'triton'
+  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp312-cp312-win_amd64.whl ; python_full_version == '3.12.*' and sys_platform == 'win32' and extra == 'triton'
+  - triton @ https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post5/triton-3.1.0-cp39-cp39-win_amd64.whl ; python_full_version == '3.9.*' and sys_platform == 'win32' and extra == 'triton'
   requires_python: '>=3.9'
 - pypi: https://files.pythonhosted.org/packages/04/5a/df46fa3bb0954bca9ae55dd290c45fdf7ba24708956419ff5b9b2b645745/unsloth_zoo-2025.2.5-py3-none-any.whl
   name: unsloth-zoo
@@ -5812,7 +6277,7 @@ packages:
   sha256: 0130ef65c8d04dde9d38447a72191232f4fd0258bdecb8c86bb2fa8155776350
   requires_dist:
   - torch
-  - triton ; platform_system == 'Linux'
+  - triton ; sys_platform == 'linux'
   - packaging
   - tyro
   - transformers>=4.46.1
@@ -5857,6 +6322,11 @@ packages:
   - flake8-use-fstring ; extra == 'dev'
   - pep8-naming ; extra == 'dev'
   requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/81/c0/7461b49cd25aeece13766f02ee576d1db528f1c37ce69aee300e075b485b/uritemplate-4.1.1-py2.py3-none-any.whl
+  name: uritemplate
+  version: 4.1.1
+  sha256: 830c08b8d99bdd312ea4ead05994a38e8936266f84b9a7878232db50b044e02e
+  requires_python: '>=3.6'
 - pypi: https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl
   name: urllib3
   version: 2.3.0

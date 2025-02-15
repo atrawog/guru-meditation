@@ -16,7 +16,7 @@ RUN pacman -S --noconfirm ${ARCH_DEV} && \
     pacman -Scc --noconfirm
 
 
-ARG PIXI_VERSION=v0.40.0   
+ARG PIXI_VERSION=v0.41.3   
 RUN curl -Ls \
     "https://github.com/prefix-dev/pixi/releases/download/${PIXI_VERSION}/pixi-$(uname -m)-unknown-linux-musl" \
     -o /usr/local/bin/pixi && chmod +x /usr/local/bin/pixi

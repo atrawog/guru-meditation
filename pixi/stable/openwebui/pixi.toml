@@ -1,7 +1,6 @@
 [project]
 authors = ["atrawog <atrawog@gmail.com>"]
 channels = ["conda-forge", "pytorch", "nvidia"]
-description = "Add a short description here"
 name = "openwebui"
 platforms = ["linux-64"]
 version = "0.1.0"
