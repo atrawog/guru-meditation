@@ -99,7 +99,7 @@ pixi add python=3.11
 pixi add --pypi open-webui
 pixi task rm  openwebui; pixi task add openwebui -- DATA_DIR=/workspace/data/openwebui open-webui serve --port 3000
 pixi task rm  openwebui-dev; pixi task add openwebui-dev -- DATA_DIR=/workspace/data/openwebui-dev open-webui serve --port 3001
-pixi  run openwebui-dev
+
 
 # UV
 rm -rf .venv pyproject.toml uv.lock 
