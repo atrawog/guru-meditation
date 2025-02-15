@@ -20,8 +20,8 @@ echo "Checking for supervisor socket at ${socket_path}..."
     echo "Supervisor socket is available."
 
 
-if [ "${JUPYTERBOOK_ENABLE}" = "true" ]; then
-    echo "JUPYTERBOOK_ENABLE is set. Proceeding to start jupyterbook."
+if [ "${JUPYTERBOOK}" = "true" ]; then
+    echo "JUPYTERBOOK is set. Proceeding to start jupyterbook."
 
     # Start jupyterbook using supervisorctl
     supervisorctl start jupyterbook
@@ -41,12 +41,62 @@ if [ "${JUPYTERBOOK_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "JUPYTERBOOK_ENABLE is not set. Skipping jupyterbook startup."
+    echo "JUPYTERBOOK is not set. Skipping jupyterbook startup."
 fi
 
 
-if [ "${JUPYTERHUB_ENABLE}" = "true" ]; then
-    echo "JUPYTERHUB_ENABLE is set. Proceeding to start jupyterhub."
+if [ "${JUPYTERSERVER}" = "true" ]; then
+    echo "JUPYTERSERVER is set. Proceeding to start jupyterserver."
+
+    # Start jupyterhub using supervisorctl
+    supervisorctl start jupyterserver
+
+    # Loop to check the status of jupyterserver
+    while true; do
+        # Get the status of jupyterserver
+        status=$(supervisorctl status jupyterserver | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "jupyterserver is running."
+            break
+        else
+            echo "Waiting for jupyterserver to start..."
+            sleep 1
+        fi
+    done
+else
+    echo "JUPYTERSERVER is not set. Skipping jupyterserver startup."
+fi
+
+
+if [ "${JUPYTERSERVER_DEV}" = "true" ]; then
+    echo "JUPYTERSERVER_DEV is set. Proceeding to start jupyterserver-dev."
+
+    # Start jupyterserver-dev using supervisorctl
+    supervisorctl start jupyterserver-dev
+
+    # Loop to check the status of jupyterserver
+    while true; do
+        # Get the status of jupyterserver
+        status=$(supervisorctl status jupyterserver-dev | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "jupyterserver-dev is running."
+            break
+        else
+            echo "Waiting for jupyterserver-dev to start..."
+            sleep 1
+        fi
+    done
+else
+    echo "JUPYTERSERVER_DEV is not set. Skipping jupyterserver-dev startup."
+fi
+
+
+if [ "${JUPYTERHUB}" = "true" ]; then
+    echo "JUPYTERHUB is set. Proceeding to start jupyterhub."
 
     # Start jupyterhub using supervisorctl
     supervisorctl start jupyterhub
@@ -66,12 +116,36 @@ if [ "${JUPYTERHUB_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "JUPYTERHUB_ENABLE is not set. Skipping jupyterhub startup."
+    echo "JUPYTERHUB is not set. Skipping jupyterhub startup."
 fi
 
 
-if [ "${OLLAMA_ENABLE}" = "true" ]; then
-    echo "OLLAMA_ENABLE is set. Proceeding to start ollama."
+if [ "${JUPYTERHUB_DEV}" = "true" ]; then
+    echo "JUPYTERHUB_DEV is set. Proceeding to start jupyterhub-dev."
+
+    # Start jupyterhub using supervisorctl
+    supervisorctl start jupyterhub-dev
+
+    # Loop to check the status of jupyterhub
+    while true; do
+        # Get the status of jupyterhub
+        status=$(supervisorctl status jupyterhub-dev | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "jupyterhub-dev is running."
+            break
+        else
+            echo "Waiting for jupyterhub-dev to start..."
+            sleep 1
+        fi
+    done
+else
+    echo "JUPYTERHUB_DEV is not set. Skipping jupyterhub-dev startup."
+fi
+
+if [ "${OLLAMA}" = "true" ]; then
+    echo "OLLAMA is set. Proceeding to start ollama."
 
     # Start ollama using supervisorctl
     supervisorctl start ollama
@@ -91,12 +165,12 @@ if [ "${OLLAMA_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "OLLAMA_ENABLE is not set. Skipping ollama startup."
+    echo "OLLAMA is not set. Skipping ollama startup."
 fi
 
 
-if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
-    echo "OPENWEBUI_ENABLE is set. Proceeding to start ollama."
+if [ "${OPENWEBUI}" = "true" ]; then
+    echo "OPENWEBUI is set. Proceeding to start openwebui."
 
     # Start openwebui using supervisorctl
     supervisorctl start openwebui
@@ -116,5 +190,30 @@ if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "OPENWEBUI_ENABLE is not set. Skipping openwebui startup."
+    echo "OPENWEBUI is not set. Skipping openwebui startup."
+fi
+
+
+if [ "${OPENWEBUI_DEV}" = "true" ]; then
+    echo "OPENWEBUI_DEV is set. Proceeding to start openwebui-dev."
+
+    # Start openwebui using supervisorctl
+    supervisorctl start openwebui-dev
+
+    # Loop to check the status of openwebui-dev
+    while true; do
+        # Get the status of openwebui
+        status=$(supervisorctl status openwebui-dev | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "openwebui-dev is running."
+            break
+        else
+            echo "Waiting for openwebui-dev to start..."
+            sleep 1
+        fi
+    done
+else
+    echo "OPENWEBUI_DEV is not set. Skipping openwebui-dev startup."
 fi
