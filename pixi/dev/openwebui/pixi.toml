@@ -11,6 +11,7 @@ openwebui-dev = "DATA_DIR=/workspace/data/openwebui-dev open-webui serve --port 
 
 [dependencies]
 python = "3.11.*"
+pip = ">=25.0.1,<26"
 
 [pypi-dependencies]
 open-webui = ">=0.5.12, <0.6"

@@ -85,7 +85,7 @@ cd /workspace/pixi/dev/jupyter
 sudo rm -rf pixi.* .pixi/
 pixi init -c conda-forge -c pytorch -c nvidia
 pixi add python=3.11
-pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git peft accelerate bitsandbytes torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book==2.0.0a1  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy bitsandbytes accelerate xformers==0.0.29 peft triton cut_cross_entropy unsloth_zoo protobuf datasets huggingface_hub hf_transfer tqdm ipywidgets trl pip openai langchain-openai langchain-aws langchain-anthropic langchain-cohere langchain-google-genai langchain-mistralai langchain-nvidia-ai-endpoints r5py folium pandas geopandas matplotlib mapclassify
+pixi add --pypi unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git peft accelerate bitsandbytes torch torchvision torchaudio transformers mistral mistral-inference jupyterhub jupyter-ai jupyterlab mystmd jupyter-ai-magics jupyter-book==2.0.0a1  jupyterlab-myst langchain-ollama ansible ansible-runner libvirt-python huggingface-hub altair numpy pandas geopandas kubernetes nbdev papermill fastapi configurable-http-proxy bitsandbytes accelerate xformers==0.0.29 peft triton cut_cross_entropy unsloth_zoo protobuf datasets huggingface_hub hf_transfer tqdm ipywidgets trl pip openai langchain-openai langchain-aws langchain-anthropic langchain-cohere langchain-google-genai langchain-mistralai langchain-nvidia-ai-endpoints r5py folium pandas geopandas matplotlib mapclassify together umap-learn[plot] graphviz numpy orjson dataset wandb python-Levenshtein byaldi together pdf2image duckduckgo_search together transformers tiktoken beautifulsoup4 bm25s ffmpeg-python PyAudio pypdf cartesia bert_score rouge_score evaluate orjson seaborn matplotlib numpy tqdm
 supervisorctl restart jupyterserver-dev
 
 
@@ -103,7 +103,7 @@ cd /workspace/pixi/dev/openwebui
 sudo rm -rf pixi.* .pixi/
 pixi init -c conda-forge -c pytorch -c nvidia
 pixi add python=3.11
-pixi add --pypi open-webui
+pixi add --pypi open-webui pip
 pixi task rm  openwebui; pixi task add openwebui -- DATA_DIR=/workspace/data/openwebui open-webui serve --port 3000
 pixi task rm  openwebui-dev; pixi task add openwebui-dev -- DATA_DIR=/workspace/data/openwebui-dev open-webui serve --port 3001
 
