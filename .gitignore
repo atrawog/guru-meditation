@@ -197,3 +197,5 @@ secrets.env
 jupyterhub-proxy.pid
 .continue
 .jupyter
+
+.Trash-1000/

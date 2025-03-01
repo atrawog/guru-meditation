@@ -50,8 +50,8 @@ RUN git clone https://aur.archlinux.org/yay.git && \
     makepkg -si --noconfirm && \
     cd .. && rm -rf yay
 
-RUN yay -S --noconfirm ${ARCH_YAY} && \
-    yay -Scc --noconfirm --noconfirm
+#RUN yay -S --noconfirm ${ARCH_YAY} && \
+#    yay -Scc --noconfirm --noconfirm
 
 USER root
 
