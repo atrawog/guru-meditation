@@ -6,12 +6,17 @@ FROM ${BASE_IMAGE}:${BASE_VERSION}
 ARG ARCH_BASE=""
 ARG ARCH_DEV=""
 ARG ARCH_YAY=""
+ARG ARCH_CUDA=""
+ARG ARCH_CUDNN=""
+ARG ARCH_NVIDIA=""
+ARG ARCH_OLLAMA=""
 ARG DOCKER_GID=957
 
 # Install base development tools, sudo, pixi, and other dependencies
 RUN groupadd -g $DOCKER_GID docker
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm ${ARCH_BASE} && \
     pacman -Scc --noconfirm
+
 RUN pacman -S --noconfirm ${ARCH_DEV} && \
     pacman -Scc --noconfirm
 
@@ -50,10 +55,23 @@ RUN git clone https://aur.archlinux.org/yay.git && \
     makepkg -si --noconfirm && \
     cd .. && rm -rf yay
 
-#RUN yay -S --noconfirm ${ARCH_YAY} && \
-#    yay -Scc --noconfirm --noconfirm
+RUN yay -S --noconfirm ${ARCH_YAY} && \
+    yay -Scc --noconfirm --noconfirm && \
+    yay -Yc --noconfirm
 
 USER root
+
+RUN pacman -S --noconfirm ${ARCH_NVIDIA} && \
+    pacman -Scc --noconfirm
+
+RUN pacman -S --noconfirm ${ARCH_CUDA} && \
+    pacman -Scc --noconfirm
+    
+RUN pacman -S --noconfirm ${ARCH_CUDNN} && \
+    pacman -Scc --noconfirm
+
+RUN pacman -S --noconfirm ${ARCH_OLLAMA} && \
+    pacman -Scc --noconfirm
 
 COPY config/supervisord.conf /etc/supervisord.conf
 COPY config/*.ini /etc/supervisor.d/
@@ -64,6 +82,10 @@ WORKDIR /workspace
 ENTRYPOINT ["/usr/local/bin/shell.sh"]
 
 EXPOSE 3000
+EXPOSE 3001
 EXPOSE 8000
+EXPOSE 8001
+EXPOSE 8010
+EXPOSE 8011
 EXPOSE 8080
 EXPOSE 11434

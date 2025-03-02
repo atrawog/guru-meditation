@@ -199,3 +199,5 @@ jupyterhub-proxy.pid
 .jupyter
 
 .Trash-1000/
+letsencrypt/
+.docker-tmp

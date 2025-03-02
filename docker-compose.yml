@@ -1,0 +1,46 @@
+services:
+  traefik:
+    image: traefik:latest
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - "--entrypoints.web.http.redirections.entryPoint.permanent=true"
+      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+      - "--certificatesresolvers.myresolver.acme.email=atrawog@gmail.com"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+      - "--certificatesresolvers.myresolver.acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "./letsencrypt:/letsencrypt"
+    restart: unless-stopped
+
+  gurum:
+    image: ghcr.io/atrawog/guru-meditation:latest
+    labels:
+      - "traefik.enable=true"
+      
+      # Router for l.atrawog.org mapped to service gurum-8000 (port 8000)
+      - "traefik.http.routers.gurum.rule=Host(`l.atrawog.org`)"
+      - "traefik.http.routers.gurum.entrypoints=websecure"
+      - "traefik.http.routers.gurum.tls=true"
+      - "traefik.http.routers.gurum.tls.certresolver=myresolver"
+      - "traefik.http.routers.gurum.service=gurum-8000"
+      - "traefik.http.services.gurum-8000.loadbalancer.server.port=8000"
+
+      # Router for l-dev.atrawog.org mapped to service gurum-8001 (port 8001)
+      - "traefik.http.routers.gurum-dev.rule=Host(`l-dev.atrawog.org`)"
+      - "traefik.http.routers.gurum-dev.entrypoints=websecure"
+      - "traefik.http.routers.gurum-dev.tls=true"
+      - "traefik.http.routers.gurum-dev.tls.certresolver=myresolver"
+      - "traefik.http.routers.gurum-dev.service=gurum-8001"
+      - "traefik.http.services.gurum-8001.loadbalancer.server.port=8001"
+    restart: unless-stopped
+    volumes:
+      - "${PWD}:/workspace"

@@ -62,7 +62,6 @@
         "ms-azuretools.vscode-docker",
         "streetsidesoftware.code-spell-checker",
         "streetsidesoftware.code-spell-checker-german",
-        "ms-python.vscode-pylance",
         "saoudrizwan.claude-dev"
     ]
     "remoteUser": "gm",
@@ -70,13 +69,13 @@
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind",
         "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,type=bind",
-        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-        "source=/run/user/1000/bus,target=/run/user/1000/bus,type=bind"
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+        // "source=/run/user/1000/bus,target=/run/user/1000/bus,type=bind"
     ],
     "postCreateCommand": "/workspace/config/postcreate.sh",
     "updateRemoteUserUID": true,
     "containerEnv": {
-        "SSH_AUTH_SOCK": "/ssh-agent",
-        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus"
+        "SSH_AUTH_SOCK": "/ssh-agent"
+        // "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus"
     }
 }
