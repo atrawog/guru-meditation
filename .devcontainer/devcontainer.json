@@ -4,7 +4,7 @@
         "dockerfile": "Containerfile"
     },
     "runArgs": [
-        "--gpus=all",
+        //"--gpus=all",
         "--env-file=config.env",
         "--env-file=secrets.env",
         "--hostname=gurum" 
