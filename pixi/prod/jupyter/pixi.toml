@@ -98,3 +98,4 @@ pydriosm = ">=2.2.0, <3"
 r5py = { git = "git+https://github.com/r5py/r5py.git" }
 routingpy = ">=1.3.0, <2"
 polyline = ">=2.0.2, <3"
+boto3 = ">=1.37.19, <2"

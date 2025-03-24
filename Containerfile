@@ -105,8 +105,8 @@ ENV JH_PORT=8010
 ENV OW_PORT=3000
 COPY --chown=${USER_UID}:${USER_GID} pixi/prod /pixi/
 COPY --chown=${USER_UID}:${USER_GID} config/jupyter/prod /config/
-RUN cd /pixi/jupyter && pixi install -v
-RUN cd /pixi/openwebui && pixi install -v
+RUN cd /pixi/jupyter && pixi install -v && pixi clean cache -yv
+RUN cd /pixi/openwebui && pixi install -v && pixi clean cache -yv
 
 EXPOSE 3000
 EXPOSE 8010
