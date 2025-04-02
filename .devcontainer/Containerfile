@@ -1,1 +1,1 @@
-FROM atrawog/guru-meditation-devel:latest
+FROM ghcr.io/atrawog/guru-meditation-devel:latest
