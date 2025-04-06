@@ -97,9 +97,8 @@ else
     echo "OLLAMA_ENABLE is not set. Skipping ollama startup."
 fi
 
-
 if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
-    echo "OPENWEBUI_ENABLE is set. Proceeding to start ollama."
+    echo "OPENWEBUI_ENABLE is set. Proceeding to start openwebui."
 
     # Start openwebui using supervisorctl
     supervisorctl start openwebui
@@ -121,4 +120,30 @@ if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
     done
 else
     echo "OPENWEBUI_ENABLE is not set. Skipping openwebui startup."
+fi
+
+
+if [ "${MCPO_ENABLE}" = "true" ]; then
+    echo "MCPO_ENABLE is set. Proceeding to start mcpo."
+
+    # Start mcpo using supervisorctl
+    supervisorctl start mcpo
+
+    # Loop to check the status of mcpo
+    while true; do
+        # Get the status of openwebui
+        status=$(supervisorctl status mcpo | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "mcpo is running."
+            break
+        else
+            echo "Waiting for mcpo to start..."
+            sleep 5
+            supervisorctl start mcpo
+        fi
+    done
+else
+    echo "MCPO_ENABLE is not set. Skipping mcpo startup."
 fi
