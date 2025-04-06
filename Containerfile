@@ -23,11 +23,6 @@ RUN pacman -Syu --noconfirm && \
 RUN pacman -S --noconfirm ${ARCH_DEV} && \
     paccache -r -k0 && pacman -Scc --noconfirm
 
-ARG PIXI_VERSION=v0.43.0 
-RUN curl -Ls \
-    "https://github.com/prefix-dev/pixi/releases/download/${PIXI_VERSION}/pixi-$(uname -m)-unknown-linux-musl" \
-    -o /usr/local/bin/pixi && chmod +x /usr/local/bin/pixi
-
 ARG USER_NAME=gm
 ARG USER_UID=1000
 ARG USER_GID=1000
@@ -57,7 +52,8 @@ RUN git clone https://aur.archlinux.org/yay.git && \
     makepkg -si --noconfirm && \
     cd .. && rm -rf yay
 
-RUN yay -S --noconfirm ${ARCH_YAY} && \
+RUN yay -Syu --noconfirm && \
+    yay -S --noconfirm ${ARCH_YAY} && \
     yay -Scc --noconfirm && \
     yay -Yc --noconfirm
 
@@ -74,6 +70,12 @@ RUN pacman -S --noconfirm ${ARCH_CUDNN} && \
 
 RUN pacman -S --noconfirm ${ARCH_OLLAMA} && \
     paccache -r -k0 && pacman -Scc --noconfirm
+
+ARG PIXI_VERSION=v0.43.0 
+RUN curl -Ls \
+    "https://github.com/prefix-dev/pixi/releases/download/${PIXI_VERSION}/pixi-$(uname -m)-unknown-linux-musl" \
+    -o /usr/local/bin/pixi && chmod +x /usr/local/bin/pixi
+    
 
 COPY config/supervisor/supervisord.conf /etc/supervisord.conf
 COPY config/scripts/*.sh /usr/local/bin/
@@ -102,11 +104,12 @@ WORKDIR /workspace
 ENV JS_CONFIG=/config/jupyterserver.py
 ENV JH_CONFIG=/config/jupyterhub.py
 ENV JH_PORT=8010
+ENV JS_PORT=8010
 ENV OW_PORT=3000
 COPY --chown=${USER_UID}:${USER_GID} pixi/prod /pixi/
-COPY --chown=${USER_UID}:${USER_GID} config/jupyter/prod /config/
-RUN cd /pixi/jupyter && pixi install -v && pixi clean cache -yv
-RUN cd /pixi/openwebui && pixi install -v && pixi clean cache -yv
+RUN cd /pixi/jupyter && pixi reinstall -v && pixi clean cache -yv
+RUN cd /pixi/openwebui && pixi reinstall -v && pixi clean cache -yv
+COPY --chown=${USER_UID}:${USER_GID} config/jupyter/prod /config
 
 EXPOSE 3000
 EXPOSE 8010

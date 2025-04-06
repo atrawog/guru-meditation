@@ -15,8 +15,8 @@ sudo /usr/sbin/supervisord -c /etc/supervisord.conf > /dev/null 2>&1 &
 socket_path="/run/supervisor.sock"
 echo "Checking for supervisor socket at ${socket_path}..."
     while [ ! -S "${socket_path}" ]; do
-        echo "Supervisor socket not found. Retrying in 1 second..."
-        sleep 1
+        echo "Supervisor socket not found. Retrying in 5 second..."
+        sleep 5
     done
     echo "Supervisor socket is available."
 
@@ -37,11 +37,38 @@ if [ "${JUPYTERHUB_ENABLE}" = "true" ]; then
             break
         else
             echo "Waiting for jupyterhub to start..."
-            sleep 1
+            sleep 5
+            supervisorctl start jupyterhub
         fi
     done
 else
     echo "JUPYTERHUB_ENABLE is not set. Skipping jupyterhub startup."
+fi
+
+
+if [ "${JUPYTERSERVER_ENABLE}" = "true" ]; then
+    echo "JUPYTERSERVER_ENABLE is set. Proceeding to start jupyterserver."
+
+    # Start jupyterhub using supervisorctl
+    supervisorctl start jupyterserver
+
+    # Loop to check the status of jupyterserver
+    while true; do
+        # Get the status of jupyterserver
+        status=$(supervisorctl status jupyterserver | awk '{print $2}')
+
+        # Check if the status is RUNNING
+        if [ "$status" == "RUNNING" ]; then
+            echo "jupyterserver is running."
+            break
+        else
+            echo "Waiting for jupyterserver to start..."
+            sleep 5
+            supervisorctl start jupyterserver
+        fi
+    done
+else
+    echo "JUPYTERSERVER_ENABLE is not set. Skipping jupyterserver startup."
 fi
 
 
@@ -62,7 +89,8 @@ if [ "${OLLAMA_ENABLE}" = "true" ]; then
             break
         else
             echo "Waiting for ollama to start..."
-            sleep 1
+            sleep 5
+            supervisorctl start ollama
         fi
     done
 else
@@ -87,7 +115,8 @@ if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
             break
         else
             echo "Waiting for openwebui to start..."
-            sleep 1
+            sleep 5
+            supervisorctl start openwebui
         fi
     done
 else

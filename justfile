@@ -83,6 +83,11 @@ push:
     docker --config .docker-tmp push ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE:latest && \
     docker --config .docker-tmp logout ghcr.io
 
+# Pull container image to GitHub Container Registry
+pull:
+    docker pull ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE-devel:latest && \
+    docker pull  ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE:latest
+
 # Clean build and Jupyter directories
 clean:
     rm -rf _build/*

@@ -11,7 +11,7 @@ for file in env_files:
     env_vars.update(dotenv_values(file))
 
 # Get environment variables directly from OS environment with fallbacks
-jh_data_dir = os.environ.get('JH_DATA_DIR', '/workspace/data/jupyter/prod')
+jh_data_dir = os.environ.get('JH_DATA_DIR', '/workspace/data/jupyterhub/prod')
 jh_port = os.environ.get('JH_PORT', '8010')
 
 # Core configuration
