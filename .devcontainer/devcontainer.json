@@ -9,7 +9,7 @@
         "--env-file=secrets.env",
         "--hostname=gurum" 
     ],
-    "forwardPorts": [3001,8011],
+    "forwardPorts": [3001,8001,8011,8021],
     "customizations": {
         "vscode": {
             "settings": {

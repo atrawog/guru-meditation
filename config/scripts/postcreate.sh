@@ -20,8 +20,8 @@ echo "Checking for supervisor socket at ${socket_path}..."
     done
     echo "Supervisor socket is available."
 
-if [ "${JUPYTERHUB_ENABLE}" = "true" ]; then
-    echo "JUPYTERHUB_ENABLE is set. Proceeding to start jupyterhub."
+if [ "${JH_ENABLE}" = "true" ]; then
+    echo "JH_ENABLE is set. Proceeding to start jupyterhub."
 
     # Start jupyterhub using supervisorctl
     supervisorctl start jupyterhub
@@ -42,12 +42,12 @@ if [ "${JUPYTERHUB_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "JUPYTERHUB_ENABLE is not set. Skipping jupyterhub startup."
+    echo "JH_ENABLE is not set. Skipping jupyterhub startup."
 fi
 
 
-if [ "${JUPYTERSERVER_ENABLE}" = "true" ]; then
-    echo "JUPYTERSERVER_ENABLE is set. Proceeding to start jupyterserver."
+if [ "${JS_ENABLE}" = "true" ]; then
+    echo "JS_ENABLE is set. Proceeding to start jupyterserver."
 
     # Start jupyterhub using supervisorctl
     supervisorctl start jupyterserver
@@ -68,7 +68,7 @@ if [ "${JUPYTERSERVER_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "JUPYTERSERVER_ENABLE is not set. Skipping jupyterserver startup."
+    echo "JS_ENABLE is not set. Skipping jupyterserver startup."
 fi
 
 
@@ -97,8 +97,8 @@ else
     echo "OLLAMA_ENABLE is not set. Skipping ollama startup."
 fi
 
-if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
-    echo "OPENWEBUI_ENABLE is set. Proceeding to start openwebui."
+if [ "${OW_ENABLE}" = "true" ]; then
+    echo "OW_ENABLE is set. Proceeding to start openwebui."
 
     # Start openwebui using supervisorctl
     supervisorctl start openwebui
@@ -119,7 +119,7 @@ if [ "${OPENWEBUI_ENABLE}" = "true" ]; then
         fi
     done
 else
-    echo "OPENWEBUI_ENABLE is not set. Skipping openwebui startup."
+    echo "OW_ENABLE is not set. Skipping openwebui startup."
 fi
 
 

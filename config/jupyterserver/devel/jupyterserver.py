@@ -6,7 +6,6 @@ original_env = os.environ.copy()
 
 env_files = [
     '/workspace/config.env',
-    '/workspace/config-prod.env',
     '/workspace/secrets.env'
 ]
 env_vars = {}
@@ -25,8 +24,8 @@ for file in env_files:
 os.environ.update(env_vars)
 
 # Get values directly from the environment (prioritizes existing variables)
-js_data_dir = os.environ.get('JS_DATA_DIR', '/workspace/data/jupyterserver/prod')
-js_port = int(os.environ.get('JS_PORT', '8010'))
+js_data_dir = os.environ.get('JS_DATA_DIR', '/workspace/data/jupyterserver/devel')
+js_port = int(os.environ.get('JS_PORT', '8031'))
 c = get_config()
 
 # Server configuration

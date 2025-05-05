@@ -4,15 +4,15 @@ from dotenv import dotenv_values
 
 c = get_config()  # Initialize configuration first
 
-# Load environment variables from .env files
-env_files = ['/workspace/config.env', '/workspace/secrets.env']
+# Load environment variables from .env files (for other variables if needed)
+env_files = ['/workspace/config.env', '/workspace/config-prod.env','/workspace/secrets.env']
 env_vars = {}
 for file in env_files:
     env_vars.update(dotenv_values(file))
 
-# Get environment variables with fallbacks
-jh_data_dir = env_vars.get('JH_DATA_DIR', '/workspace/data/jupyter/devel')
-jh_port = env_vars.get('JH_PORT', '8011')
+# Get environment variables directly from OS environment with fallbacks
+jh_data_dir = os.environ.get('JH_DATA_DIR', '/workspace/data/jupyterhub/prod')
+jh_port = os.environ.get('JH_PORT', '8020')
 
 # Core configuration
 c.JupyterHub.authenticator_class = 'pam'

@@ -67,7 +67,7 @@ run:
         --workdir /workspace \
         --rm \
         --name guru-meditation-devel \
-        -p 3000:3000 -p 8010:8010 \
+        -p 3000:3000 -p 8010:8010 -p 8020:8020 -p 8030:8030 \
         -it $DOCKER_USERNAME/$DOCKER_IMAGE:latest
 
 history:
@@ -84,9 +84,14 @@ push:
     docker --config .docker-tmp logout ghcr.io
 
 # Pull container image to GitHub Container Registry
-pull:
+pull-ghrc:
     docker pull ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE-devel:latest && \
     docker pull  ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE:latest
+
+pull:
+    set -a; source ./secrets.env; set +a
+    DOCKER_HOST_PULL="ssh://$DOCKER_USERNAME@$DOCKER_HOST_PULL" docker pull ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE-devel:latest
+    DOCKER_HOST_PULL="ssh://$DOCKER_USERNAME@$DOCKER_HOST_PULL" docker pull ghcr.io/$DOCKER_USERNAME/$DOCKER_IMAGE:latest
 
 # Clean build and Jupyter directories
 clean:
