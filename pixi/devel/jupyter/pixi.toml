@@ -9,7 +9,7 @@ version = "0.1.0"
 jupyterserver = "jupyter-server --config $JS_CONFIG"
 jupyterhub = "jupyterhub --config $JH_CONFIG"
 mcpo = "mcpo --port $MCPO_PORT -c $MCPO_CONFIG"
-mcp-server-time = "mcp-proxy  --port $MCP_SERVER_TIME --pass-environment mcp-server-time"
+mcp-server-time = "mcp-proxy  --port $MCP_SERVER_TIME_PORT --pass-environment mcp-server-time"
 
 [dependencies]
 python = "3.11.*"
