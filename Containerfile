@@ -41,10 +41,10 @@ RUN git clone https://aur.archlinux.org/yay.git && \
     cd yay && \
     makepkg -si --noconfirm && \
     cd .. && rm -rf yay
-RUN yay -Syu --noconfirm && \
-    yay -S --noconfirm ${ARCH_YAY} && \
-    yay -Scc --noconfirm && \
-    yay -Yc --noconfirm
+#RUN yay -Syu --noconfirm && \
+#    yay -S --noconfirm ${ARCH_YAY} && \
+#    yay -Scc --noconfirm && \
+#    yay -Yc --noconfirm
 USER root
 RUN --mount=type=cache,target=/var/cache/pacman/pkg \
     pacman -S --noconfirm ${ARCH_NVIDIA}
