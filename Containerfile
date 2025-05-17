@@ -58,14 +58,14 @@ ARG PIXI_VERSION=v0.43.0
 RUN curl -Ls \
     "https://github.com/prefix-dev/pixi/releases/download/${PIXI_VERSION}/pixi-$(uname -m)-unknown-linux-musl" \
     -o /usr/local/bin/pixi && chmod +x /usr/local/bin/pixi
-COPY config/supervisor/supervisord.conf /etc/supervisord.conf
 COPY config/scripts/*.sh /usr/local/bin/
 USER ${USER_NAME}
 WORKDIR /workspace
 ENTRYPOINT ["/usr/local/bin/entry.sh"]
 FROM base AS devel
 USER root
-COPY config/supervisor/devel/*.ini /etc/supervisor.d/
+COPY config/supervisor/devel/supervisord.conf /etc/supervisord.conf
+# COPY config/supervisor/devel/*.ini /etc/supervisor.d/
 EXPOSE 3001
 EXPOSE 8001
 EXPOSE 8011
@@ -76,6 +76,8 @@ USER root
 COPY config/supervisor/prod/*.ini /etc/supervisor.d/
 RUN mkdir -p /pixi && chown -R ${USER_NAME}:${USER_NAME} /pixi
 RUN mkdir -p /config && chown -R ${USER_NAME}:${USER_NAME} /config
+COPY config/supervisor/devel/supervisord.conf /etc/supervisord.conf
+COPY config/supervisor/devel/*.ini /etc/supervisor.d/
 USER ${USER_NAME}
 WORKDIR /workspace
 ENV JS_CONFIG=/config/jupyterserver.py
