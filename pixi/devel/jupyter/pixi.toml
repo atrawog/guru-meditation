@@ -9,7 +9,9 @@ version = "0.1.0"
 jupyterserver = "jupyter-server --config $JS_CONFIG"
 jupyterhub = "jupyterhub --config $JH_CONFIG"
 mcpo = "mcpo --port $MCPO_PORT -c $MCPO_CONFIG"
-mcp-server-time = "mcp-proxy  --port $MCP_SERVER_TIME_PORT --pass-environment mcp-server-time"
+mcp-server-time = "mcp-proxy --host 0.0.0.0 --port $MCP_SERVER_TIME_PORT --pass-environment -- mcp-server-time"
+mcp-server-fetch = "mcp-proxy --host 0.0.0.0 --port $MCP_SERVER_FETCH_PORT --pass-environment -- mcp-server-fetch --ignore-robots-txt --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36'"
+mcp-brave-search = "mcp-proxy  --host 0.0.0.0 --port $MCP_BRAVE_SEARCH_PORT --pass-environment -- npx -y @modelcontextprotocol/server-brave-search"
 
 [dependencies]
 python = "3.11.*"
