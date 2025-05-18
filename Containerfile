@@ -62,22 +62,22 @@ COPY config/scripts/*.sh /usr/local/bin/
 USER ${USER_NAME}
 WORKDIR /workspace
 ENTRYPOINT ["/usr/local/bin/entry.sh"]
+
 FROM base AS devel
 USER root
 COPY config/supervisor/devel/supervisord.conf /etc/supervisord.conf
-# COPY config/supervisor/devel/*.ini /etc/supervisor.d/
 EXPOSE 3001
 EXPOSE 8001
 EXPOSE 8011
 EXPOSE 8021
 EXPOSE 8031
+
 FROM base
 USER root
-COPY config/supervisor/prod/*.ini /etc/supervisor.d/
 RUN mkdir -p /pixi && chown -R ${USER_NAME}:${USER_NAME} /pixi
 RUN mkdir -p /config && chown -R ${USER_NAME}:${USER_NAME} /config
-COPY config/supervisor/devel/supervisord.conf /etc/supervisord.conf
-COPY config/supervisor/devel/*.ini /etc/supervisor.d/
+COPY config/supervisor/prod/supervisord.conf /etc/supervisord.conf
+COPY config/supervisor/prod/*.ini /etc/supervisor.d/
 USER ${USER_NAME}
 WORKDIR /workspace
 ENV JS_CONFIG=/config/jupyterserver.py
