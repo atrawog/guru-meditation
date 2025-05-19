@@ -65,12 +65,15 @@ ENTRYPOINT ["/usr/local/bin/entry.sh"]
 
 FROM base AS devel
 USER root
+# Install Model Context Protocol Inspector
+RUN npm install -g @modelcontextprotocol/inspector
 COPY config/supervisor/devel/supervisord.conf /etc/supervisord.conf
 EXPOSE 3001
 EXPOSE 8001
 EXPOSE 8011
 EXPOSE 8021
 EXPOSE 8031
+EXPOSE 9100-9110
 
 FROM base
 USER root
@@ -97,3 +100,4 @@ EXPOSE 8000
 EXPOSE 8010
 EXPOSE 8020
 EXPOSE 8030
+EXPOSE 9000-9010
