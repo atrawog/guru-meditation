@@ -12,6 +12,7 @@ mcpo = "mcpo --port $MCPO_PORT -c $MCPO_CONFIG"
 mcp-server-time = "mcp-proxy --host 0.0.0.0 --port $MCP_SERVER_TIME_PORT --pass-environment -- mcp-server-time"
 mcp-server-fetch = "mcp-proxy --host 0.0.0.0 --port $MCP_SERVER_FETCH_PORT --pass-environment -- mcp-server-fetch --ignore-robots-txt --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36'"
 mcp-brave-search = "mcp-proxy  --host 0.0.0.0 --port $MCP_BRAVE_SEARCH_PORT --pass-environment -- npx -y @modelcontextprotocol/server-brave-search"
+mcp-notebook="cursor-notebook-mcp --transport sse --allow-root $MCP_NOTEBOOK_DIR --host 0.0.0.0 --port $MCP_NOTEBOOK_PORT"
 
 [dependencies]
 python = "3.11.*"
